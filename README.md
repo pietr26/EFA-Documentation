@@ -30,13 +30,13 @@ Ziel dieses Projekts ist es, die IntAPI zugänglich und nachvollziehbar zu mache
 Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation anwenden. Damit lassen sich für bestimmte Gebiete genauere Daten wie Echtzeitdaten oder Störungsmeldungen anzeigen.
 > Achtung: Im Grundsatz lässt sich die Dokumentation auf alle Dienste anwenden. Allerdings ergeben sich in einigen Datenstrukturen durchaus weitere Properties, die ich noch nach und nach dokumentiere.
 
-API | Endpoint | Gebietsabdeckung Echtzeitdaten und Störungsmeldungen | Einbindung in Dokumentation
+API | Endpoint | Gebietsabdeckung Fahrplandaten | Gebietsabdeckung Echtzeitdaten und Störungsmeldungen | Einbindung in Dokumentation
 | --- | --- | --- | --- |
-| EFA-Allgemein (offiziell) | https://v4-api.efa.de/ | Hannover, Braunschweig, Hameln | nicht eingebunden |
-| EFA-Allgemein (IntAPI) | https://efa.de/efa/ | Hannover, Braunschweig, Hameln | Fortgeschritten ([#1](pietr26/EFA-Documentation/issues/1)) |
-| EFA-VRR | https://www.vrr.de/vrr-efa/ | Rhein-Ruhr | Ausstehend ([#3](pietr26/EFA-Documentation/issues/3)) |
-| EFA-VVS | https://www3.vvs.de/mngvvs/ | Stuttgart | Ausstehend ([#4](pietr26/EFA-Documentation/issues/4)) |
-| EFA-BW | https://www.bwegt.de/bwegt-efa/ | Baden-Württemberg | Ausstehend ([#5](pietr26/EFA-Documentation/issues/5)) |
+| EFA-Allgemein (offiziell) | https://v4-api.efa.de/ | gesamt Deutschland | Hannover, Braunschweig, Hameln | nicht eingebunden |
+| EFA-Allgemein (IntAPI) | https://efa.de/efa/ | gesamt Deutschland | Hannover, Braunschweig, Hameln | Fortgeschritten ([#1](pietr26/EFA-Documentation/issues/1)) |
+| EFA-VRR | https://www.vrr.de/vrr-efa/ | ... | ... | Ausstehend ([#3](pietr26/EFA-Documentation/issues/3)) |
+| EFA-VVS | https://www3.vvs.de/mngvvs/ | ... | ... | Ausstehend ([#4](pietr26/EFA-Documentation/issues/4)) |
+| EFA-BW | https://www.bwegt.de/bwegt-efa/ | ... | ... | Ausstehend ([#5](pietr26/EFA-Documentation/issues/5)) |
 
 In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI angegeben, kann aber 1:1 durch eine der o.g. Alternativen (bis auf die offizielle API) ersetzt werden.
 
