@@ -145,6 +145,13 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td>...</td>
     <td><img src="https://geps.dev/progress/0"></td>
   </tr>
+  <tr>
+    <td>EFA-DE-VVO</td>
+    <td><code>http://efa.vvo-online.de:8080/std3/trias/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
 </table>
 
 In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI angegeben, kann aber 1:1 durch eine der o.g. Alternativen (bis auf die offizielle API) ersetzt werden.
