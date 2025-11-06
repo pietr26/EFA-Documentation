@@ -2,7 +2,7 @@
 
 >⚠️ Hinweis: Die Dokumentation befindet sich gerade in den ersten Entwürfen. Grundsätzlich kann sie schon verwendet werden, jedoch werde ich in den nächsten Tagen und Wochen wohl noch einiges umstrukturieren. ~03.11.2025
 
-> Dokumentation hier ansehen: https://5desypxb3b.eu.apidog.com/
+> Dokumentation hier ansehen: https://efa-api-doc.eu.apidog.com/
 
 Diese API ist nicht die offizielle EFA-Webservice-API, sondern diejenige, die von der Webseite selbst verwendet wird – sie ist schneller, liefert mehr Daten und unterstützt statt exklusiv XML-Output auch jenen in JSON.
 
