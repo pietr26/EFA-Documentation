@@ -97,13 +97,6 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
-    <td>EFA-AE-DU</td>
-    <td><code>https://wojhati.rta.ae/dub/</code></td>
-    <td>...</td>
-    <td>...</td>
-    <td><img src="https://geps.dev/progress/0"></td>
-  </tr>
-  <tr>
     <td>EFA-AT-LI</td>
     <td><code>https://www.linzag.at/static/</code><br><code>https://www.linzag.at/linz2/</code></td>
     <td>...</td>
