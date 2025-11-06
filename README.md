@@ -70,13 +70,13 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   </tr>
   <tr>
     <td>EFA-DE-VRR</td>
-    <td><code>https://www.vrr.de/vrr-efa/</code><br><code>https://www.vrr.de/vrr-efa/</code></td>
+    <td><code>https://www.vrr.de/vrr-efa/</code><br><code>https://efa.vrr.de/standard/</code></td>
     <td>...</td>
     <td>...</td>
     <td><img src="https://geps.dev/progress/0"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/3">#3</a>)</td>
   </tr>
   <tr>
-    <td>EFA-DE-BW</td>
+    <td>EFA-DE-BWS</td>
     <td><code>https://www.bwegt.de/bwegt-efa/</code><br><code>https://www.efa-bw.de/nvbw3L/</code></td>
     <td>...</td>
     <td>...</td>
@@ -126,7 +126,7 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   </tr>
   <tr>
     <td>EFA-DE-VRN</td>
-    <td><code>https://mandanten.vrn.de/takt2/</code><br><code>https://efa.vrr.de/standard/</code></td>
+    <td><code>https://mandanten.vrn.de/takt2/</code></td>
     <td>...</td>
     <td>...</td>
     <td><img src="https://geps.dev/progress/0"></td>
@@ -169,19 +169,19 @@ Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie o
   </tr>
   <tr>
     <td><code>https://www.naldo.de/_assets/012ccdbd1331184d82aa9387f0ed2f73/efa/</code> (naldo)</td>
-    <td>EFA-DE-BW</td>
+    <td>EFA-DE-BWS</td>
   </tr>
   <tr>
     <td><code>https://www3.vvs.de/mngvvs/</code> (VVS)</td>
-    <td>EFA-DE-BW</td>
+    <td>EFA-DE-BWS</td>
   </tr>
   <tr>
     <td><code>https://www.kvv.de/tunnelEfaDirect.php?action=</code> (KVV)</td>
-    <td>EFA-DE-BW</td>
+    <td>EFA-DE-BWS</td>
   </tr>
   <tr>
     <td><code>https://www.fahrplanauskunft-mv.de/vmv-efa/</code> (MV)<br>Tatsächlich enthalten MV und BW dieselben Daten</td>
-    <td>EFA-DE-BW</td>
+    <td>EFA-DE-BWS</td>
   </tr>
   <tr>
     <td><code>https://www.vrt-info.de/fahrplanauskunft/</code> (VRT)</td>
