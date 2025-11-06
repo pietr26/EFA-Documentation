@@ -62,43 +62,132 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <th>Einbindung in Dokumentation</th>
   </tr>
   <tr>
-    <td>EFA-Allgemein (offiziell)</td>
-    <td>https://v4-api.efa.de/</td>
+    <td>EFA-A (IntAPI)</td>
+    <td><code>https://efa.de/efa/</code></td>
     <td>gesamt Deutschland</td>
     <td>Hannover, Braunschweig, Hameln</td>
-    <td>nicht eingebunden</td>
+    <td><img src="https://geps.dev/progress/80"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/1">#1</a>)</td>
   </tr>
   <tr>
-    <td>EFA-Allgemein (IntAPI)</td>
-    <td>https://efa.de/efa/</td>
-    <td>gesamt Deutschland</td>
-    <td>Hannover, Braunschweig, Hameln</td>
-    <td><img src="https://geps.dev/progress/80" alt="80% Fortschritt"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/1">#1</a>)</td>
+    <td>EFA-DE-VRR</td>
+    <td><code>https://www.vrr.de/vrr-efa/</code><br><code>https://www.vrr.de/vrr-efa/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/3">#3</a>)</td>
   </tr>
   <tr>
-    <td>EFA-VRR</td>
-    <td>https://www.vrr.de/vrr-efa/</td>
+    <td>EFA-DE-BW</td>
+    <td><code>https://www.bwegt.de/bwegt-efa/</code><br><code>https://www.efa-bw.de/nvbw3L/</code></td>
     <td>...</td>
     <td>...</td>
-    <td><img src="https://geps.dev/progress/0" alt="0% Fortschritt"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/3">#3</a>)</td>
+    <td><img src="https://geps.dev/progress/0"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/5">#5</a>)</td>
   </tr>
   <tr>
-    <td>EFA-VVS</td>
-    <td>https://www3.vvs.de/mngvvs/</td>
+    <td>EFA-DE-VVV</td>
+    <td><code>https://vogtlandauskunft.de/vvv2/</code></td>
     <td>...</td>
     <td>...</td>
-    <td><img src="https://geps.dev/progress/0" alt="0% Fortschritt"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/4">#4</a>)</td>
+    <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
-    <td>EFA-BW</td>
-    <td>https://www.bwegt.de/bwegt-efa/</td>
+    <td>EFA-DE-MVV</td>
+    <td><code>https://efa.mvv-muenchen.de/mobile/</code></td>
     <td>...</td>
     <td>...</td>
-    <td><img src="https://geps.dev/progress/0" alt="0% Fortschritt"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/5">#5</a>)</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-AE-DU</td>
+    <td><code>https://wojhati.rta.ae/dub/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-AT-LI</td>
+    <td><code>https://www.linzag.at/static/</code><br><code>https://www.linzag.at/linz2/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-AU-NSW</td>
+    <td><code>https://transportnsw.info/web/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-DE-BY</td>
+    <td><code>https://mobile.defas-fgi.de/beg/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-DE-VRN</td>
+    <td><code>https://mandanten.vrn.de/takt2/</code><br><code>https://efa.vrr.de/standard/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-DE-VGN</td>
+    <td><code>https://efa.vgn.de/vgn/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
+    <td>EFA-IT-BZ</td>
+    <td><code>https://mobility.api.opendatahub.com/v2/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
   </tr>
 </table>
 
 In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI angegeben, kann aber 1:1 durch eine der o.g. Alternativen (bis auf die offizielle API) ersetzt werden.
+
+Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie oder eine Teilmenge der Daten der schon o.g. Dienste. Die Beurteilung dieser Doppelungen findet anhand einer Abfrage von <code>XML_ADDINFO_REQUEST</code> und anschließendem Vergleich der ausgegebenen Meldungen statt, da sich diese erfahrungsgemäß nur auf das abgedeckte Verkehrsgebiet beschränken. Die doppelten Dienste können zwar genutzt werden, aufgrund keiner weiteren Prüfung kann es hier jedoch noch zu Unterschieden kommen oder geringeren Datenmengen kommen. Aus dem Grunde empfehle ich einfach die Nutzung der obigen Dienste, die eh ja nicht weniger abdecken.
+<table>
+  <tr>
+    <th>Endpunkt</th>
+    <th>(Teil-)Übereinstimmung mit Dienst</th>
+  </tr>
+  <tr>
+    <td><code>https://bsvg.efa.de/vrbstd/</code> (BSVG)</td>
+    <td>EFA-A</td>
+  </tr>
+  <tr>
+    <td><code>https://efa.projektionisten.eu/efaws2/default/</code> (RVHI)</td>
+    <td>EFA-A</td>
+  </tr>
+  <tr>
+    <td><code>https://www.westfalenfahrplan.de/nwl-efa/</code> (WT)</td>
+    <td>EFA-DE-VRR</td>
+  </tr>
+  <tr>
+    <td><code>https://www.naldo.de/_assets/012ccdbd1331184d82aa9387f0ed2f73/efa/</code> (naldo)</td>
+    <td>EFA-DE-BW</td>
+  </tr>
+  <tr>
+    <td><code>https://www3.vvs.de/mngvvs/</code> (VVS)</td>
+    <td>EFA-DE-BW</td>
+  </tr>
+  <tr>
+    <td><code>https://www.kvv.de/tunnelEfaDirect.php?action=</code> (KVV)</td>
+    <td>EFA-DE-BW</td>
+  </tr>
+  <tr>
+    <td><code>https://www.fahrplanauskunft-mv.de/vmv-efa/</code> (MV)<br>Tatsächlich enthalten MV und BW dieselben Daten</td>
+    <td>EFA-DE-BW</td>
+  </tr>
+  <tr>
+    <td><code>https://www.vrt-info.de/fahrplanauskunft/</code> (VRT)</td>
+    <td>EFA-DE-VRN</td>
+  </tr>
+</table>
 
 ## Mitmachen
 Falls du...
