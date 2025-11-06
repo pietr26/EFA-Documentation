@@ -1,5 +1,4 @@
 # Dokumentation der internen EFA-API
-[Dokumentation](https://efa-api-doc.norlon.de) | [GitHub](https://github.com/pietr26/EFA-Documentation)
 
 > ⚠️ Hinweis: Die Dokumentation befindet sich gerade in den ersten Entwürfen. Grundsätzlich kann sie schon verwendet werden, jedoch werde ich in den nächsten Tagen und Wochen wohl noch einiges umstrukturieren. ~03.11.2025
 
@@ -21,12 +20,12 @@ Ziel dieses Projekts ist es, die IntAPI zugänglich und nachvollziehbar zu mache
   </tr>
   <tr>
     <td>Authentifizierung</td>
-    <td><a href="https://connect-fahrplanauskunft.de/datenbereitstellung#openservice">Beantragung eines Zugangs-Tokens</a></td>
+    <td><a href="https://connect-fahrplanauskunft.de/datenbereitstellung#openservice" target="_blank">Beantragung eines Zugangs-Tokens</a></td>
     <td>frei zugänglich</td>
   </tr>
   <tr>
     <td>Dokumentation</td>
-    <td><a href="https://www.vdv.de/431-2-sdsv1.2.pdfx">Offiziell</a></td>
+    <td><a href="https://www.vdv.de/431-2-sdsv1.2.pdfx" target="_blank">Offiziell</a></td>
     <td>nur inoffiziell - hier</td>
   </tr>
   <tr>
@@ -108,7 +107,7 @@ Falls du...
 - weitere Abweichungen der bekannten Dienste aufdeckst (ggf. auf Version achten),
 - ...
 
-[eröffne gerne ein Issue](https://github.com/pietr26/EFA-Documentation/issues)!
+<a href="https://github.com/pietr26/EFA-Documentation/issues" target="_blank">eröffne gerne ein Issue</a>!
 
 ## Disclaimer
 Ich oder dieses Projekt steht in keiner Verbindung zu den Betreibern von efa.de oder anderen EFA-basierten Diensten.
