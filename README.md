@@ -66,21 +66,21 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td><code>https://efa.de/efa/</code></td>
     <td>gesamt Deutschland</td>
     <td>Hannover, Braunschweig, Hameln</td>
-    <td><img src="https://geps.dev/progress/80"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/1">#1</a>)</td>
+    <td><img src="https://geps.dev/progress/80"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/6">#6</a>)</td>
   </tr>
   <tr>
     <td>EFA-DE-VRR</td>
     <td><code>https://www.vrr.de/vrr-efa/</code><br><code>https://efa.vrr.de/standard/</code></td>
     <td>...</td>
     <td>...</td>
-    <td><img src="https://geps.dev/progress/0"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/3">#3</a>)</td>
+    <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
     <td>EFA-DE-BWS</td>
     <td><code>https://www.bwegt.de/bwegt-efa/</code><br><code>https://www.efa-bw.de/nvbw3L/</code></td>
     <td>...</td>
     <td>...</td>
-    <td><img src="https://geps.dev/progress/0"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/5">#5</a>)</td>
+    <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
     <td>EFA-DE-VVV</td>
