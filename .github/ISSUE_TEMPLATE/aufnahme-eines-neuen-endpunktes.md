@@ -2,8 +2,6 @@
 name: Aufnahme eines neuen Endpunktes
 about: Todo-Liste für die Aufnahme eines neuen Endpunktes
 title: Endpoint XXXXXX
-labels: ''
-assignees: ''
 
 ---
 
