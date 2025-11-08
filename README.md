@@ -83,13 +83,6 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
-    <td>DE-VVV</td>
-    <td><code>https://vogtlandauskunft.de/vvv2/</code></td>
-    <td>...</td>
-    <td>...</td>
-    <td><img src="https://geps.dev/progress/0"></td>
-  </tr>
-  <tr>
     <td>DE-MVV</td>
     <td><code>https://efa.mvv-muenchen.de/mobile/</code></td>
     <td>...</td>
@@ -140,7 +133,7 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   </tr>
   <tr>
     <td>DE-VVO</td>
-    <td><code>http://efa.vvo-online.de:8080/std3/trias/</code></td>
+    <td><code>https://efa.vvo-online.de/VMSSL3/</code></td>
     <td>...</td>
     <td>...</td>
     <td><img src="https://geps.dev/progress/0"></td>
@@ -186,6 +179,14 @@ Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie o
   <tr>
     <td><code>https://www.vrt-info.de/fahrplanauskunft/</code> (VRT)</td>
     <td>DE-VRN</td>
+  </tr>
+  <tr>
+    <td><code>https://vogtlandauskunft.de/vvv2/</code> (VVV)</td>
+    <td>DE-VVO</td>
+  </tr>
+  <tr>
+    <td><code>http://efa.vvo-online.de:8080/std3/trias/</code> (VVO)</td>
+    <td>DE-VVO</td>
   </tr>
 </table>
 
