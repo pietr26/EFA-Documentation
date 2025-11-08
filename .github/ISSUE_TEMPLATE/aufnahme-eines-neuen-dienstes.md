@@ -1,0 +1,11 @@
+---
+name: Aufnahme eines neuen Dienstes
+about: Todo-Liste für die Aufnahme eines neuen Dienstes
+title: Dienst XXXXXX
+labels: ''
+assignees: ''
+
+---
+
+- [ ] Tests der Endpunkte (funktionieren oder funktionieren nicht)
+- [ ] Aufnahme in Endpunktliste
