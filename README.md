@@ -205,7 +205,7 @@ Die Informationen wurden ausschließlich durch die Analyse öffentlich zugängli
 
 Nutzung auf eigene Verantwortung.
 
-## Inhaltliche Hinweise
+## <a id="contentHints"></a>Inhaltliche Hinweise
 - **Dokumentation bezieht sich auf `rapidJSON`-Format**: Die gesamte Dokumentation wurde auf Basis von `rapidJSON`-Outputs erstellt und wird auch auf Basis dieser geplegt - inbesondere die nicht-verarbeiten Ausgabeformate haben bedeutend andere Response-Datenstrukturen, u.U. ist `rapidXML` davon auch betroffen. Die Wahl fiel auf JSON im allgemeinen, da dieses Format im Gegensatz zu XML moderner ist und auch höher typisiert (eindeutiger) ist.
 - **Gruppierung von Request-Parametern:** Insbesondere bei Anfragen mit vielen Parametern habe ich Hilfsparameter (z.B. "--- ALLGEMEIN ---") eingefügt, um die Parameter etwas zu gruppieren und für etwas mehr Übersicht zu sorgen. Diese können (für Tests) so ruhig mitgesendet werden, das stört die Dienste nicht besonders - aber natürlich müssen die bei richtigen Implementierungen nicht mitgesendet werden.
 - **Parameterdoppelungen:** Einige Request-Parameter doppeln sich in ihrer Funktion (z.B. Zeitauswahl: auch Parameter zum separeten Setzen von Jahr, Monat und Tag verfügbar). Der Übersichtlichkeit halber wurden diese Doppelungen nicht mit in die Dokumentation aufgenommen. Die aufgenommen Parameter erfüllen (mindestens) alle Funktionen, die die nicht betrachteten Parameter auch erfüllen.
