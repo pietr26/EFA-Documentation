@@ -81,13 +81,6 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
-    <td>DE-MVV</td>
-    <td><code>https://efa.mvv-muenchen.de/mobile/</code></td>
-    <td>...</td>
-    <td>...</td>
-    <td><img src="https://geps.dev/progress/0"></td>
-  </tr>
-  <tr>
     <td>AT-LI</td>
     <td><code>https://www.linzag.at/static/</code><br><code>https://www.linzag.at/linz2/</code></td>
     <td>...</td>
@@ -185,6 +178,10 @@ Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie o
   <tr>
     <td><code>http://efa.vvo-online.de:8080/std3/trias/</code> (VVO)</td>
     <td>DE-VVO</td>
+  </tr>
+  <tr>
+    <td><code>https://efa.mvv-muenchen.de/mobile/</code> (MVV)<br>Keine Echtzeitdaten, teilweise falsche Datenbasis</td>
+    <td>DE-BY</td>
   </tr>
 </table>
 
