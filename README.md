@@ -17,6 +17,11 @@ Ziel dieses Projekts ist es, die IntAPI zugänglich und nachvollziehbar zu mache
     <th>IntAPI</th>
   </tr>
   <tr>
+    <td>Format</td>
+    <td>XML</td>
+    <td>wahlweise JSON oder XML<br><sup>in verschiedenen Arten</sup></td>
+  </tr>
+  <tr>
     <td>Authentifizierung</td>
     <td><a href="https://connect-fahrplanauskunft.de/datenbereitstellung#openservice" target="_blank">Beantragung eines Zugangs-Tokens</a></td>
     <td>frei zugänglich</td>
