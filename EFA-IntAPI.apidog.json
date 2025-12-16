@@ -6415,7 +6415,7 @@
           }
         },
         {
-          "name": "Systeninformation (SYSTEMINFO)",
+          "name": "Systeminformation (SYSTEMINFO)",
           "api": {
             "id": "4003885",
             "method": "get",
@@ -6732,7 +6732,7 @@
                   "id": "mj8vMHQlOP",
                   "enable": true,
                   "name": "line",
-                  "example": "gvh:02009: :R:j25",
+                  "example": "gvh:03124:%20:H:j25",
                   "fixedValue": false
                 },
                 {
@@ -6742,12 +6742,12 @@
                   "id": "pZLkgIHOAC",
                   "enable": true,
                   "name": "tripCode",
-                  "example": "333",
+                  "example": "308",
                   "fixedValue": false
                 },
                 {
                   "required": true,
-                  "description": "Datum der Fahrt (Orientierung an Abfahrt an der ersten Haltestelle)",
+                  "description": "Datum einer ausgewählten Haltestelle der Fahrt",
                   "type": "string",
                   "id": "RYcmyUKx6p",
                   "enable": true,
@@ -6757,26 +6757,26 @@
                     "format": "date",
                     "pattern": "YYYYMMDD"
                   },
-                  "example": "20251123",
+                  "example": "20251209",
                   "fixedValue": false
                 },
                 {
                   "required": true,
-                  "description": "Angabe der Zeit (Abfahrt an der ersten Haltestelle)",
+                  "description": "Zeit einer ausgewählten Haltestelle der Fahrt",
                   "type": "string",
                   "id": "SWlLinSKsS",
                   "enable": true,
                   "name": "time",
-                  "example": "2346"
+                  "example": "2221"
                 },
                 {
                   "required": true,
-                  "description": "ID einer Haltestelle",
+                  "description": "ID einer ausgewählten Haltestelle der Fahrt",
                   "type": "string",
                   "id": "5L7kbk4RUZ",
                   "enable": true,
                   "name": "stop",
-                  "example": "25005001",
+                  "example": "25001457",
                   "fixedValue": false
                 },
                 {
@@ -7108,7 +7108,7 @@
               {
                 "name": "Fahrt wurde durch Echtzeitdaten ergänzt: Sie ist nicht mehr fahrbar, da sie am Hannover Hbf ausfällt.",
                 "data": "{\r\n    \"version\": \"11.0.6.72\",\r\n    \"journey\": {\r\n        \"rating\": 0,\r\n        \"isAdditional\": false,\r\n        \"tripImpossible\": true,\r\n        \"interchanges\": 0,\r\n        \"legs\": [\r\n            {\r\n                \"duration\": 6420,\r\n                \"isRealtimeControlled\": true,\r\n                \"realtimeStatus\": [\r\n                    \"MONITORED\"\r\n                ],\r\n                \"origin\": {\r\n                    \"isGlobalId\": true,\r\n                    \"id\": \"de:03241:31:93:6\",\r\n                    \"name\": \"Hannover Hauptbahnhof\",\r\n                    \"disassembledName\": \"8 A-C\",\r\n                    \"type\": \"platform\",\r\n                    \"pointType\": \"TRACK\",\r\n                    \"coord\": [\r\n                        52.37726,\r\n                        9.74143\r\n                    ],\r\n                    \"niveau\": 1,\r\n                    \"parent\": {\r\n                        \"isGlobalId\": true,\r\n                        \"id\": \"de:03241:31\",\r\n                        \"name\": \"Hannover Hauptbahnhof\",\r\n                        \"disassembledName\": \"Hauptbahnhof\",\r\n                        \"type\": \"stop\",\r\n                        \"parent\": {\r\n                            \"id\": \"placeID:3241001:18\",\r\n                            \"name\": \"Hannover\",\r\n                            \"type\": \"locality\"\r\n                        },\r\n                        \"properties\": {\r\n                            \"stopId\": \"25000031\"\r\n                        },\r\n                        \"coord\": [\r\n                            52.37649,\r\n                            9.74107\r\n                        ],\r\n                        \"niveau\": 0\r\n                    },\r\n                    \"productClasses\": [\r\n                        0,\r\n                        1,\r\n                        3,\r\n                        13,\r\n                        16\r\n                    ],\r\n                    \"departureTimeBaseTimetable\": \"2025-11-09T20:45:00Z\",\r\n                    \"departureTimePlanned\": \"2025-11-09T20:45:00Z\",\r\n                    \"departureTimeEstimated\": \"2025-11-09T20:45:00Z\",\r\n                    \"properties\": {\r\n                        \"AREA_NIVEAU_DIVA\": \"1\",\r\n                        \"plannedPlatformName\": \"8 A-C\",\r\n                        \"stoppingPointPlanned\": \"8 A-C\",\r\n                        \"realtimeStatus\": [\r\n                            \"DEPARTURE_CANCELLED\"\r\n                        ],\r\n                        \"areaGid\": \"de:03241:31:93\",\r\n                        \"area\": \"93\",\r\n                        \"platform\": \"8\",\r\n                        \"platformName\": \"8 A-C\",\r\n                        \"plannedPlatformName\": \"8 A-C\"\r\n                    }\r\n                },\r\n                \"destination\": {\r\n                    \"isGlobalId\": true,\r\n                    \"id\": \"de:03403:16750:93:7\",\r\n                    \"name\": \"Oldenburg, Hauptbahnhof\",\r\n                    \"disassembledName\": \"7\",\r\n                    \"type\": \"platform\",\r\n                    \"pointType\": \"TRACK\",\r\n                    \"coord\": [\r\n                        53.1443,\r\n                        8.22328\r\n                    ],\r\n                    \"niveau\": 1,\r\n                    \"parent\": {\r\n                        \"isGlobalId\": true,\r\n                        \"id\": \"de:03403:16750\",\r\n                        \"name\": \"Oldenburg, Hauptbahnhof\",\r\n                        \"disassembledName\": \"Hauptbahnhof\",\r\n                        \"type\": \"stop\",\r\n                        \"parent\": {\r\n                            \"id\": \"placeID:3403000:14\",\r\n                            \"name\": \"Oldenburg (Oldenbg)\",\r\n                            \"type\": \"locality\"\r\n                        },\r\n                        \"properties\": {\r\n                            \"stopId\": \"28016750\"\r\n                        },\r\n                        \"coord\": [\r\n                            53.14422,\r\n                            8.22268\r\n                        ],\r\n                        \"niveau\": 0\r\n                    },\r\n                    \"productClasses\": [\r\n                        0,\r\n                        13\r\n                    ],\r\n                    \"arrivalTimeBaseTimetable\": \"2025-11-09T22:32:00Z\",\r\n                    \"arrivalTimePlanned\": \"2025-11-09T22:32:00Z\",\r\n                    \"arrivalTimeEstimated\": \"2025-11-09T22:32:00Z\",\r\n                    \"properties\": {\r\n                        \"AREA_NIVEAU_DIVA\": \"1\",\r\n                        \"plannedPlatformName\": \"7\",\r\n                        \"stoppingPointPlanned\": \"7\",\r\n                        \"realtimeStatus\": [\r\n                            \"ARRIVAL_CANCELLED\"\r\n                        ],\r\n                        \"areaGid\": \"de:03403:16750:93\",\r\n                        \"area\": \"93\",\r\n                        \"platform\": \"7\",\r\n                        \"platformName\": \"7\",\r\n                        \"plannedPlatformName\": \"7\"\r\n                    }\r\n                },\r\n                \"transportation\": {\r\n                    \"id\": \"ddb:98X25: :R:j25\",\r\n                    \"name\": \"ICE 532 InterCityExpress\",\r\n                    \"number\": \"532\",\r\n                    \"product\": {\r\n                        \"id\": 0,\r\n                        \"class\": 16,\r\n                        \"name\": \"Zug\",\r\n                        \"iconId\": 6\r\n                    },\r\n                    \"operator\": {\r\n                        \"code\": \"DB\",\r\n                        \"id\": \"00\",\r\n                        \"name\": \"DB AG\"\r\n                    },\r\n                    \"properties\": {\r\n                        \"trainName\": \"InterCityExpress\",\r\n                        \"trainType\": \"ICE\",\r\n                        \"trainNumber\": \"532\",\r\n                        \"tripCode\": 285,\r\n                        \"lineDisplay\": \"TRAIN\",\r\n                        \"OperatorURL\": \"https://www.bahn.de\",\r\n                        \"AVMSTripID\": \"532-80-8000261-171600#!ADD!#DB#\",\r\n                        \"specialFares\": \"ICE_ROUTE\",\r\n                        \"timetablePeriod\": \"Jahresfahrplan 2025\"\r\n                    }\r\n                },\r\n                \"hints\": [\r\n                    {\r\n                        \"content\": \"Bordrestaurant\",\r\n                        \"providerCode\": \"BR\",\r\n                        \"type\": \"Timetable\",\r\n                        \"properties\": {\r\n                            \"subnet\": \"ddb\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"content\": \"Komfort Check-in verfügbar - wenn möglich bitte einchecken\",\r\n                        \"providerCode\": \"CK\",\r\n                        \"type\": \"Timetable\",\r\n                        \"properties\": {\r\n                            \"subnet\": \"ddb\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"stopSequence\": [\r\n                    {\r\n                        \"isGlobalId\": true,\r\n                        \"id\": \"de:03241:31:93:6\",\r\n                        \"name\": \"Hannover Hauptbahnhof\",\r\n                        \"disassembledName\": \"8 A-C\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            52.37726,\r\n                            9.74143\r\n                        ],\r\n                        \"niveau\": 1,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:03241:31\",\r\n                            \"name\": \"Hannover Hauptbahnhof\",\r\n                            \"disassembledName\": \"Hauptbahnhof\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:3241001:18\",\r\n                                \"name\": \"Hannover\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"25000031\"\r\n                            },\r\n                            \"coord\": [\r\n                                52.37649,\r\n                                9.74107\r\n                            ],\r\n                            \"niveau\": 0\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            1,\r\n                            3,\r\n                            13,\r\n                            16\r\n                        ],\r\n                        \"properties\": {\r\n                            \"AREA_NIVEAU_DIVA\": \"1\",\r\n                            \"plannedPlatformName\": \"8 A-C\",\r\n                            \"stoppingPointPlanned\": \"8 A-C\",\r\n                            \"realtimeStatus\": [\r\n                                \"DEPARTURE_CANCELLED\"\r\n                            ],\r\n                            \"areaGid\": \"de:03241:31:93\",\r\n                            \"area\": \"93\",\r\n                            \"platform\": \"8\",\r\n                            \"platformName\": \"8 A-C\",\r\n                            \"plannedPlatformName\": \"8 A-C\",\r\n                            \"zone\": \"gvh:101\"\r\n                        },\r\n                        \"departureTimePlanned\": \"2025-11-09T20:45:00Z\",\r\n                        \"isCancelled\": true\r\n                    },\r\n                    {\r\n                        \"id\": \"25009538||2\",\r\n                        \"name\": \"Nienburg (Weser)\",\r\n                        \"disassembledName\": \"2\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            52.64505,\r\n                            9.21687\r\n                        ],\r\n                        \"niveau\": 0,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:03256:67639\",\r\n                            \"name\": \"Nienburg (Weser)\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:3256022:3\",\r\n                                \"name\": \"Nienburg (Weser)\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"25009538\"\r\n                            }\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            1,\r\n                            13\r\n                        ],\r\n                        \"properties\": {\r\n                            \"stopId\": \"25009538\",\r\n                            \"AREA_NIVEAU_DIVA\": \"0\",\r\n                            \"plannedPlatformName\": \"2\",\r\n                            \"stoppingPointPlanned\": \"2\",\r\n                            \"realtimeStatus\": [\r\n                                \"NO_CALL_AT_STOP\"\r\n                            ],\r\n                            \"platform\": \"2\",\r\n                            \"platformName\": \"2\",\r\n                            \"plannedPlatformName\": \"2\",\r\n                            \"zone\": \"gvh:907\"\r\n                        },\r\n                        \"arrivalTimePlanned\": \"2025-11-09T21:12:00Z\",\r\n                        \"departureTimePlanned\": \"2025-11-09T21:13:00Z\",\r\n                        \"isCancelled\": true\r\n                    },\r\n                    {\r\n                        \"id\": \"28218007||2\",\r\n                        \"name\": \"Verden\",\r\n                        \"disassembledName\": \"2\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            52.92087,\r\n                            9.23772\r\n                        ],\r\n                        \"niveau\": 0,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:03361:93627\",\r\n                            \"name\": \"Verden\",\r\n                            \"disassembledName\": \"Bahnhof Verden\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:3361012:14\",\r\n                                \"name\": \"Verden (Aller)\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"28218007\"\r\n                            }\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            13\r\n                        ],\r\n                        \"properties\": {\r\n                            \"stopId\": \"28218007\",\r\n                            \"AREA_NIVEAU_DIVA\": \"0\",\r\n                            \"plannedPlatformName\": \"2\",\r\n                            \"stoppingPointPlanned\": \"2\",\r\n                            \"realtimeStatus\": [\r\n                                \"NO_CALL_AT_STOP\"\r\n                            ],\r\n                            \"platform\": \"2\",\r\n                            \"platformName\": \"2\",\r\n                            \"plannedPlatformName\": \"2\",\r\n                            \"zone\": \"gvh:900\"\r\n                        },\r\n                        \"arrivalTimePlanned\": \"2025-11-09T21:31:00Z\",\r\n                        \"departureTimePlanned\": \"2025-11-09T21:33:00Z\",\r\n                        \"isCancelled\": true\r\n                    },\r\n                    {\r\n                        \"isGlobalId\": true,\r\n                        \"id\": \"de:04011:13927::3\",\r\n                        \"name\": \"Bremen Hbf\",\r\n                        \"disassembledName\": \"3\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            53.08332,\r\n                            8.8131\r\n                        ],\r\n                        \"niveau\": 1,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:04011:13927\",\r\n                            \"name\": \"Bremen Hbf\",\r\n                            \"disassembledName\": \"Hauptbahnhof\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:4011000:1\",\r\n                                \"name\": \"Bremen\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"28218000\"\r\n                            },\r\n                            \"coord\": [\r\n                                53.08328,\r\n                                8.81366\r\n                            ],\r\n                            \"niveau\": 0\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            13,\r\n                            16\r\n                        ],\r\n                        \"properties\": {\r\n                            \"AREA_NIVEAU_DIVA\": \"1\",\r\n                            \"plannedPlatformName\": \"3\",\r\n                            \"stoppingPointPlanned\": \"3\",\r\n                            \"realtimeStatus\": [\r\n                                \"NO_CALL_AT_STOP\"\r\n                            ],\r\n                            \"areaGid\": \"de:04011:13927:90\",\r\n                            \"area\": \"86\",\r\n                            \"platform\": \"3\",\r\n                            \"platformName\": \"3\",\r\n                            \"plannedPlatformName\": \"3\"\r\n                        },\r\n                        \"arrivalTimePlanned\": \"2025-11-09T21:59:00Z\",\r\n                        \"departureTimePlanned\": \"2025-11-09T22:03:00Z\",\r\n                        \"isCancelled\": true\r\n                    },\r\n                    {\r\n                        \"id\": \"28218045||3\",\r\n                        \"name\": \"Delmenhorst\",\r\n                        \"disassembledName\": \"3\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            53.05279,\r\n                            8.62976\r\n                        ],\r\n                        \"niveau\": 0,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:03401:19646\",\r\n                            \"name\": \"Delmenhorst\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:3401000:4\",\r\n                                \"name\": \"Delmenhorst\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"28218045\"\r\n                            }\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            13\r\n                        ],\r\n                        \"properties\": {\r\n                            \"stopId\": \"28218045\",\r\n                            \"AREA_NIVEAU_DIVA\": \"0\",\r\n                            \"plannedPlatformName\": \"3\",\r\n                            \"stoppingPointPlanned\": \"3\",\r\n                            \"realtimeStatus\": [\r\n                                \"NO_CALL_AT_STOP\"\r\n                            ],\r\n                            \"platform\": \"3\",\r\n                            \"platformName\": \"3\",\r\n                            \"plannedPlatformName\": \"3\"\r\n                        },\r\n                        \"arrivalTimePlanned\": \"2025-11-09T22:13:00Z\",\r\n                        \"departureTimePlanned\": \"2025-11-09T22:15:00Z\",\r\n                        \"isCancelled\": true\r\n                    },\r\n                    {\r\n                        \"isGlobalId\": true,\r\n                        \"id\": \"de:03403:16750:93:7\",\r\n                        \"name\": \"Oldenburg, Hauptbahnhof\",\r\n                        \"disassembledName\": \"7\",\r\n                        \"type\": \"platform\",\r\n                        \"pointType\": \"TRACK\",\r\n                        \"coord\": [\r\n                            53.1443,\r\n                            8.22328\r\n                        ],\r\n                        \"niveau\": 1,\r\n                        \"parent\": {\r\n                            \"isGlobalId\": true,\r\n                            \"id\": \"de:03403:16750\",\r\n                            \"name\": \"Oldenburg, Hauptbahnhof\",\r\n                            \"disassembledName\": \"Hauptbahnhof\",\r\n                            \"type\": \"stop\",\r\n                            \"parent\": {\r\n                                \"id\": \"placeID:3403000:14\",\r\n                                \"name\": \"Oldenburg (Oldenbg)\",\r\n                                \"type\": \"locality\"\r\n                            },\r\n                            \"properties\": {\r\n                                \"stopId\": \"28016750\"\r\n                            },\r\n                            \"coord\": [\r\n                                53.14422,\r\n                                8.22268\r\n                            ],\r\n                            \"niveau\": 0\r\n                        },\r\n                        \"productClasses\": [\r\n                            0,\r\n                            13\r\n                        ],\r\n                        \"properties\": {\r\n                            \"AREA_NIVEAU_DIVA\": \"1\",\r\n                            \"plannedPlatformName\": \"7\",\r\n                            \"stoppingPointPlanned\": \"7\",\r\n                            \"realtimeStatus\": [\r\n                                \"ARRIVAL_CANCELLED\"\r\n                            ],\r\n                            \"areaGid\": \"de:03403:16750:93\",\r\n                            \"area\": \"93\",\r\n                            \"platform\": \"7\",\r\n                            \"platformName\": \"7\",\r\n                            \"plannedPlatformName\": \"7\"\r\n                        },\r\n                        \"arrivalTimePlanned\": \"2025-11-09T22:32:00Z\",\r\n                        \"isCancelled\": true\r\n                    }\r\n                ],\r\n                \"infos\": [\r\n                    {\r\n                        \"priority\": \"normal\",\r\n                        \"id\": \"UESTRA-B-Hb.80\",\r\n                        \"version\": 10,\r\n                        \"type\": \"infrastructure\",\r\n                        \"properties\": {\r\n                            \"publisher\": \"ems.comm.addinfo\",\r\n                            \"infoType\": \"infrastructure\",\r\n                            \"incidentDateTime\": \"03/11/2025 16:15 - 16/11/2025 16:50\"\r\n                        },\r\n                        \"infoLinks\": [\r\n                            {\r\n                                \"urlText\": \"Hannover Hauptbahnhof: Aufzug Raschplatz (Rampe ListerMeile) - Bahnsteig stadtauswärts außer Betrieb.\",\r\n                                \"url\": \"http://ems.connect-info.net\",\r\n                                \"content\": \"In der Station Hannover Hauptbahnhof ist der Aufzug Raschplatz (Rampe ListerMeile) - Bahnsteig stadtauswärts bis auf Weiteres außer Betrieb.\",\r\n                                \"subtitle\": \"Hannover Hauptbahnhof: Aufzug Raschplatz (Rampe ListerMeile) - Bahnsteig stadtauswärts außer Betrieb.\",\r\n                                \"title\": \"Hannover Hauptbahnhof: Aufzug Raschplatz (Rampe ListerMeile) - Bahnsteig stadtauswärts außer Betrieb.\"\r\n                            }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"daysOfService\": {\r\n            \"rvb\": \"\"\r\n        }\r\n    }\r\n}",
-                "responseId": 4298308,
+                "responseId": "4298308",
                 "description": "",
                 "oasKey": "",
                 "oasExtensions": ""
@@ -7141,7 +7141,7 @@
               ],
               "oasExtensions": ""
             },
-            "description": "Über diesen Endpunkt wird ein Array von Verbindungen gesendet und diese Verbindungen in aktualisierter Form zurückgegeben - insbesondere betrifft das die Echtzeitdaten (vsl. Abfahrt/Ankunft, vsl. Gleis/Steig, Ausfall von Zwischenhalten oder der gesamten Verbindung), jedoch werden auch weitere Daten (z.B. Namen von Haltestellen) aktualisiert.\nDazu zählen leider nicht Dinge wie geplante Gleise/Steige oder Hinweise zu einer Route. Also ist dieser Endpunkt gut für simple Echtzeitaktualisierungen geeignet, für längerfristig gespeicherte und aktualisierbare Verbindungen sollte jedoch auf eine manuelle, leg-weise Aktualisierung per Direkt-Verbindungsabfrage (Einstellung ohne Umstiege) oder Abruf des Routeverlaufes gesetzt werden.\n\n**Achtung:** Damit das System die entsprechende Verbindung mit ihren Legs identifizieren kann, werden bestimmte Parameter bei der Übergabe benötigt. Dazu zählen insbesondere:\n- IDs von jeglichen wichtigen Objekten (z.B. Start-/Endpunkt, Trips, Transportmitteln)\n- geplante Abfahrts- und Ankunftszeiten\n\nGenerellt gilt: Man bekommt, was man gibt: Schickt man z.B. ein Objekt, welches eine Fahrt ohne Beschreibung der Koordinaten enthält, bekommt man diese Fahrt auch ohen Koordinaten wieder. Bzgl. der Root-Objekte wird nur - und immer - die vom Server zur Berechnung verwendete Versionsnummer und ein Journey-Objekt bzw. ein Journey-Array zurpckgegeben.\n\nDie Beeinflussung der vom Server zur Berechnung verwendeten Version ist hier nicht möglich, es wird stets die aktuellste Version genutzt. Gerne wirft der Endpunkt auch 2-3 mal nacheinander ein HTTP 500, dann einfach nochmal versuchen. Das ganze scheint noch etwas experimentell zu sein.",
+            "description": "Wird in Zukunft mit der parameterbasierten Anfrage XML_GETRTFORTRIP_REQUEST ersetzt.\n---\n\nÜber diesen Endpunkt wird ein Array von Verbindungen gesendet und diese Verbindungen in aktualisierter Form zurückgegeben - insbesondere betrifft das die Echtzeitdaten (vsl. Abfahrt/Ankunft, vsl. Gleis/Steig, Ausfall von Zwischenhalten oder der gesamten Verbindung), jedoch werden auch weitere Daten (z.B. Namen von Haltestellen) aktualisiert.\nDazu zählen leider nicht Dinge wie geplante Gleise/Steige oder Hinweise zu einer Route. Also ist dieser Endpunkt gut für simple Echtzeitaktualisierungen geeignet, für längerfristig gespeicherte und aktualisierbare Verbindungen sollte jedoch auf eine manuelle, leg-weise Aktualisierung per Direkt-Verbindungsabfrage (Einstellung ohne Umstiege) oder Abruf des Routeverlaufes gesetzt werden.\n\n**Achtung:** Damit das System die entsprechende Verbindung mit ihren Legs identifizieren kann, werden bestimmte Parameter bei der Übergabe benötigt. Dazu zählen insbesondere:\n- IDs von jeglichen wichtigen Objekten (z.B. Start-/Endpunkt, Trips, Transportmitteln)\n- geplante Abfahrts- und Ankunftszeiten\n\nGenerellt gilt: Man bekommt, was man gibt: Schickt man z.B. ein Objekt, welches eine Fahrt ohne Beschreibung der Koordinaten enthält, bekommt man diese Fahrt auch ohen Koordinaten wieder. Bzgl. der Root-Objekte wird nur - und immer - die vom Server zur Berechnung verwendete Versionsnummer und ein Journey-Objekt bzw. ein Journey-Array zurpckgegeben.\n\nDie Beeinflussung der vom Server zur Berechnung verwendeten Version ist hier nicht möglich, es wird stets die aktuellste Version genutzt. Gerne wirft der Endpunkt auch 2-3 mal nacheinander ein HTTP 500, dann einfach nochmal versuchen. Das ganze scheint noch etwas experimentell zu sein.",
             "tags": [],
             "status": "obsolete",
             "serverId": "",
@@ -7216,7 +7216,7 @@
               ],
               "oasExtensions": ""
             },
-            "description": "",
+            "description": "Wird in Zukunft mit der parameterbasierten Anfrage XML_GETRTFORTRIP_REQUEST ersetzt.\n---",
             "tags": [],
             "status": "deprecated",
             "serverId": "",
@@ -7394,1812 +7394,7 @@
                     "journeys": {
                       "type": "array",
                       "items": {
-                        "properties": {
-                          "rating": {
-                            "type": "integer"
-                          },
-                          "isAdditional": {
-                            "type": "boolean"
-                          },
-                          "interchanges": {
-                            "type": "integer"
-                          },
-                          "legs": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "duration": {
-                                  "type": "integer"
-                                },
-                                "distance": {
-                                  "type": "integer"
-                                },
-                                "origin": {
-                                  "type": "object",
-                                  "properties": {
-                                    "isGlobalId": {
-                                      "type": "boolean"
-                                    },
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "type": {
-                                      "type": "string"
-                                    },
-                                    "coord": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "number"
-                                      }
-                                    },
-                                    "niveau": {
-                                      "type": "integer"
-                                    },
-                                    "parent": {
-                                      "type": "object",
-                                      "properties": {
-                                        "id": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "type": {
-                                          "type": "string"
-                                        },
-                                        "isGlobalId": {
-                                          "type": "boolean"
-                                        },
-                                        "disassembledName": {
-                                          "type": "string"
-                                        },
-                                        "parent": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "string"
-                                            },
-                                            "name": {
-                                              "type": "string"
-                                            },
-                                            "type": {
-                                              "type": "string"
-                                            }
-                                          },
-                                          "required": [
-                                            "id",
-                                            "name",
-                                            "type"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "id",
-                                            "name",
-                                            "type"
-                                          ]
-                                        },
-                                        "properties": {
-                                          "type": "object",
-                                          "properties": {
-                                            "stopId": {
-                                              "type": "string"
-                                            }
-                                          },
-                                          "required": [
-                                            "stopId"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "stopId"
-                                          ]
-                                        },
-                                        "coord": {
-                                          "type": "array",
-                                          "items": {
-                                            "type": "number"
-                                          }
-                                        },
-                                        "niveau": {
-                                          "type": "integer"
-                                        }
-                                      },
-                                      "required": [
-                                        "isGlobalId",
-                                        "id",
-                                        "name",
-                                        "disassembledName",
-                                        "type",
-                                        "parent",
-                                        "properties",
-                                        "coord",
-                                        "niveau"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "id",
-                                        "name",
-                                        "type",
-                                        "isGlobalId",
-                                        "disassembledName",
-                                        "parent",
-                                        "properties",
-                                        "coord",
-                                        "niveau"
-                                      ]
-                                    },
-                                    "productClasses": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "integer"
-                                      }
-                                    },
-                                    "departureTimeBaseTimetable": {
-                                      "type": "string"
-                                    },
-                                    "departureTimePlanned": {
-                                      "type": "string"
-                                    },
-                                    "departureTimeEstimated": {
-                                      "type": "string"
-                                    },
-                                    "properties": {
-                                      "type": "object",
-                                      "properties": {
-                                        "stopId": {
-                                          "type": "string"
-                                        },
-                                        "AREA_NIVEAU_DIVA": {
-                                          "type": "string"
-                                        },
-                                        "area": {
-                                          "type": "string"
-                                        },
-                                        "areaGid": {
-                                          "type": "string"
-                                        },
-                                        "platform": {
-                                          "type": "string"
-                                        },
-                                        "accessArray": {
-                                          "type": "array",
-                                          "items": {
-                                            "type": "object",
-                                            "properties": {
-                                              "stoppointAccess": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "height": {
-                                                    "type": "integer"
-                                                  },
-                                                  "equipment": {
-                                                    "type": "integer"
-                                                  },
-                                                  "maxWeight": {
-                                                    "type": "integer"
-                                                  },
-                                                  "distanceTrack": {
-                                                    "type": "integer"
-                                                  },
-                                                  "lengthAvail": {
-                                                    "type": "integer"
-                                                  },
-                                                  "widthAvail": {
-                                                    "type": "integer"
-                                                  },
-                                                  "attributes": {
-                                                    "type": "integer"
-                                                  },
-                                                  "stepFromStreet": {
-                                                    "type": "integer"
-                                                  }
-                                                },
-                                                "required": [
-                                                  "equipment",
-                                                  "maxWeight",
-                                                  "distanceTrack",
-                                                  "lengthAvail",
-                                                  "widthAvail",
-                                                  "attributes",
-                                                  "stepFromStreet"
-                                                ],
-                                                "x-apidog-orders": [
-                                                  "height",
-                                                  "equipment",
-                                                  "maxWeight",
-                                                  "distanceTrack",
-                                                  "lengthAvail",
-                                                  "widthAvail",
-                                                  "attributes",
-                                                  "stepFromStreet"
-                                                ]
-                                              }
-                                            },
-                                            "required": [
-                                              "stoppointAccess"
-                                            ],
-                                            "x-apidog-orders": [
-                                              "stoppointAccess"
-                                            ]
-                                          }
-                                        },
-                                        "stoppingPointPlanned": {
-                                          "type": "string"
-                                        },
-                                        "platformName": {
-                                          "type": "string"
-                                        },
-                                        "plannedPlatformName": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "AREA_NIVEAU_DIVA",
-                                        "areaGid",
-                                        "area",
-                                        "platform",
-                                        "accessArray"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "stopId",
-                                        "AREA_NIVEAU_DIVA",
-                                        "area",
-                                        "areaGid",
-                                        "platform",
-                                        "accessArray",
-                                        "stoppingPointPlanned",
-                                        "platformName",
-                                        "plannedPlatformName"
-                                      ]
-                                    },
-                                    "disassembledName": {
-                                      "type": "string"
-                                    },
-                                    "pointType": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "isGlobalId",
-                                    "id",
-                                    "name",
-                                    "disassembledName",
-                                    "type",
-                                    "coord",
-                                    "niveau",
-                                    "parent",
-                                    "productClasses",
-                                    "departureTimeBaseTimetable",
-                                    "departureTimePlanned",
-                                    "departureTimeEstimated",
-                                    "properties"
-                                  ],
-                                  "x-apidog-orders": [
-                                    "isGlobalId",
-                                    "id",
-                                    "name",
-                                    "type",
-                                    "coord",
-                                    "niveau",
-                                    "parent",
-                                    "productClasses",
-                                    "departureTimeBaseTimetable",
-                                    "departureTimePlanned",
-                                    "departureTimeEstimated",
-                                    "properties",
-                                    "disassembledName",
-                                    "pointType"
-                                  ]
-                                },
-                                "destination": {
-                                  "type": "object",
-                                  "properties": {
-                                    "isGlobalId": {
-                                      "type": "boolean"
-                                    },
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "disassembledName": {
-                                      "type": "string"
-                                    },
-                                    "type": {
-                                      "type": "string"
-                                    },
-                                    "pointType": {
-                                      "type": "string"
-                                    },
-                                    "coord": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "number"
-                                      }
-                                    },
-                                    "niveau": {
-                                      "type": "integer"
-                                    },
-                                    "parent": {
-                                      "type": "object",
-                                      "properties": {
-                                        "isGlobalId": {
-                                          "type": "boolean"
-                                        },
-                                        "id": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "disassembledName": {
-                                          "type": "string"
-                                        },
-                                        "type": {
-                                          "type": "string"
-                                        },
-                                        "parent": {
-                                          "type": "object",
-                                          "properties": {
-                                            "id": {
-                                              "type": "string"
-                                            },
-                                            "name": {
-                                              "type": "string"
-                                            },
-                                            "type": {
-                                              "type": "string"
-                                            }
-                                          },
-                                          "required": [
-                                            "id",
-                                            "name",
-                                            "type"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "id",
-                                            "name",
-                                            "type"
-                                          ]
-                                        },
-                                        "properties": {
-                                          "type": "object",
-                                          "properties": {
-                                            "stopId": {
-                                              "type": "string"
-                                            }
-                                          },
-                                          "required": [
-                                            "stopId"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "stopId"
-                                          ]
-                                        },
-                                        "coord": {
-                                          "type": "array",
-                                          "items": {
-                                            "type": "number"
-                                          }
-                                        },
-                                        "niveau": {
-                                          "type": "integer"
-                                        }
-                                      },
-                                      "required": [
-                                        "id",
-                                        "name",
-                                        "type"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "isGlobalId",
-                                        "id",
-                                        "name",
-                                        "disassembledName",
-                                        "type",
-                                        "parent",
-                                        "properties",
-                                        "coord",
-                                        "niveau"
-                                      ]
-                                    },
-                                    "productClasses": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "integer"
-                                      }
-                                    },
-                                    "arrivalTimeBaseTimetable": {
-                                      "type": "string"
-                                    },
-                                    "arrivalTimePlanned": {
-                                      "type": "string"
-                                    },
-                                    "arrivalTimeEstimated": {
-                                      "type": "string"
-                                    },
-                                    "properties": {
-                                      "type": "object",
-                                      "properties": {
-                                        "AREA_NIVEAU_DIVA": {
-                                          "type": "string"
-                                        },
-                                        "stoppingPointPlanned": {
-                                          "type": "string"
-                                        },
-                                        "areaGid": {
-                                          "type": "string"
-                                        },
-                                        "area": {
-                                          "type": "string"
-                                        },
-                                        "platform": {
-                                          "type": "string"
-                                        },
-                                        "platformName": {
-                                          "type": "string"
-                                        },
-                                        "plannedPlatformName": {
-                                          "type": "string"
-                                        },
-                                        "accessArray": {
-                                          "type": "array",
-                                          "items": {
-                                            "type": "object",
-                                            "properties": {
-                                              "stoppointAccess": {
-                                                "type": "object",
-                                                "properties": {
-                                                  "height": {
-                                                    "type": "integer"
-                                                  },
-                                                  "equipment": {
-                                                    "type": "integer"
-                                                  },
-                                                  "maxWeight": {
-                                                    "type": "integer"
-                                                  },
-                                                  "distanceTrack": {
-                                                    "type": "integer"
-                                                  },
-                                                  "lengthAvail": {
-                                                    "type": "integer"
-                                                  },
-                                                  "widthAvail": {
-                                                    "type": "integer"
-                                                  },
-                                                  "attributes": {
-                                                    "type": "integer"
-                                                  },
-                                                  "stepFromStreet": {
-                                                    "type": "integer"
-                                                  }
-                                                },
-                                                "required": [
-                                                  "equipment",
-                                                  "maxWeight",
-                                                  "distanceTrack",
-                                                  "lengthAvail",
-                                                  "widthAvail",
-                                                  "attributes",
-                                                  "stepFromStreet"
-                                                ],
-                                                "x-apidog-orders": [
-                                                  "height",
-                                                  "equipment",
-                                                  "maxWeight",
-                                                  "distanceTrack",
-                                                  "lengthAvail",
-                                                  "widthAvail",
-                                                  "attributes",
-                                                  "stepFromStreet"
-                                                ]
-                                              }
-                                            },
-                                            "required": [
-                                              "stoppointAccess"
-                                            ],
-                                            "x-apidog-orders": [
-                                              "stoppointAccess"
-                                            ]
-                                          }
-                                        }
-                                      },
-                                      "required": [
-                                        "area"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "AREA_NIVEAU_DIVA",
-                                        "stoppingPointPlanned",
-                                        "areaGid",
-                                        "area",
-                                        "platform",
-                                        "platformName",
-                                        "plannedPlatformName",
-                                        "accessArray"
-                                      ]
-                                    }
-                                  },
-                                  "required": [
-                                    "id",
-                                    "name",
-                                    "disassembledName",
-                                    "type",
-                                    "coord",
-                                    "parent",
-                                    "arrivalTimeBaseTimetable",
-                                    "arrivalTimePlanned",
-                                    "arrivalTimeEstimated",
-                                    "properties"
-                                  ],
-                                  "x-apidog-orders": [
-                                    "isGlobalId",
-                                    "id",
-                                    "name",
-                                    "disassembledName",
-                                    "type",
-                                    "pointType",
-                                    "coord",
-                                    "niveau",
-                                    "parent",
-                                    "productClasses",
-                                    "arrivalTimeBaseTimetable",
-                                    "arrivalTimePlanned",
-                                    "arrivalTimeEstimated",
-                                    "properties"
-                                  ]
-                                },
-                                "transportation": {
-                                  "type": "object",
-                                  "properties": {
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "disassembledName": {
-                                      "type": "string"
-                                    },
-                                    "number": {
-                                      "type": "string"
-                                    },
-                                    "product": {
-                                      "type": "object",
-                                      "properties": {
-                                        "id": {
-                                          "type": "integer"
-                                        },
-                                        "class": {
-                                          "type": "integer"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "iconId": {
-                                          "type": "integer"
-                                        }
-                                      },
-                                      "required": [
-                                        "class",
-                                        "name",
-                                        "iconId"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "id",
-                                        "class",
-                                        "name",
-                                        "iconId"
-                                      ]
-                                    },
-                                    "operator": {
-                                      "type": "object",
-                                      "properties": {
-                                        "code": {
-                                          "type": "string"
-                                        },
-                                        "id": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "code",
-                                        "id",
-                                        "name"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "code",
-                                        "id",
-                                        "name"
-                                      ]
-                                    },
-                                    "destination": {
-                                      "type": "object",
-                                      "properties": {
-                                        "id": {
-                                          "type": "string"
-                                        },
-                                        "name": {
-                                          "type": "string"
-                                        },
-                                        "type": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "id",
-                                        "name",
-                                        "type"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "id",
-                                        "name",
-                                        "type"
-                                      ]
-                                    },
-                                    "properties": {
-                                      "type": "object",
-                                      "properties": {
-                                        "trainName": {
-                                          "type": "string"
-                                        },
-                                        "trainType": {
-                                          "type": "string"
-                                        },
-                                        "trainNumber": {
-                                          "type": "string"
-                                        },
-                                        "tripCode": {
-                                          "type": "integer"
-                                        },
-                                        "timetablePeriod": {
-                                          "type": "string"
-                                        },
-                                        "lineDisplay": {
-                                          "type": "string"
-                                        },
-                                        "globalId": {
-                                          "type": "string"
-                                        },
-                                        "OperatorURL": {
-                                          "type": "string"
-                                        },
-                                        "isTTB": {
-                                          "type": "boolean"
-                                        },
-                                        "isSTT": {
-                                          "type": "boolean"
-                                        },
-                                        "specialFares": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "tripCode",
-                                        "lineDisplay"
-                                      ],
-                                      "x-apidog-orders": [
-                                        "trainName",
-                                        "trainType",
-                                        "trainNumber",
-                                        "tripCode",
-                                        "timetablePeriod",
-                                        "lineDisplay",
-                                        "globalId",
-                                        "OperatorURL",
-                                        "isTTB",
-                                        "isSTT",
-                                        "specialFares"
-                                      ]
-                                    },
-                                    "description": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "product",
-                                    "properties"
-                                  ],
-                                  "x-apidog-orders": [
-                                    "id",
-                                    "name",
-                                    "disassembledName",
-                                    "number",
-                                    "product",
-                                    "operator",
-                                    "destination",
-                                    "properties",
-                                    "description"
-                                  ]
-                                },
-                                "hints": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "content": {
-                                        "type": "string"
-                                      },
-                                      "providerCode": {
-                                        "type": "string"
-                                      },
-                                      "type": {
-                                        "type": "string"
-                                      },
-                                      "properties": {
-                                        "type": "object",
-                                        "properties": {
-                                          "subnet": {
-                                            "type": "string"
-                                          }
-                                        },
-                                        "required": [
-                                          "subnet"
-                                        ],
-                                        "x-apidog-orders": [
-                                          "subnet"
-                                        ]
-                                      }
-                                    },
-                                    "required": [
-                                      "content",
-                                      "providerCode",
-                                      "type",
-                                      "properties"
-                                    ],
-                                    "x-apidog-orders": [
-                                      "content",
-                                      "providerCode",
-                                      "type",
-                                      "properties"
-                                    ]
-                                  }
-                                },
-                                "stopSequence": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "isGlobalId": {
-                                        "type": "boolean"
-                                      },
-                                      "id": {
-                                        "type": "string"
-                                      },
-                                      "name": {
-                                        "type": "string"
-                                      },
-                                      "type": {
-                                        "type": "string"
-                                      },
-                                      "coord": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "number"
-                                        }
-                                      },
-                                      "niveau": {
-                                        "type": "integer"
-                                      },
-                                      "parent": {
-                                        "type": "object",
-                                        "properties": {
-                                          "id": {
-                                            "type": "string"
-                                          },
-                                          "name": {
-                                            "type": "string"
-                                          },
-                                          "type": {
-                                            "type": "string"
-                                          },
-                                          "isGlobalId": {
-                                            "type": "boolean"
-                                          },
-                                          "parent": {
-                                            "type": "object",
-                                            "properties": {
-                                              "id": {
-                                                "type": "string"
-                                              },
-                                              "name": {
-                                                "type": "string"
-                                              },
-                                              "type": {
-                                                "type": "string"
-                                              }
-                                            },
-                                            "required": [
-                                              "id",
-                                              "name",
-                                              "type"
-                                            ],
-                                            "x-apidog-orders": [
-                                              "id",
-                                              "name",
-                                              "type"
-                                            ]
-                                          },
-                                          "properties": {
-                                            "type": "object",
-                                            "properties": {
-                                              "stopId": {
-                                                "type": "string"
-                                              }
-                                            },
-                                            "required": [
-                                              "stopId"
-                                            ],
-                                            "x-apidog-orders": [
-                                              "stopId"
-                                            ]
-                                          },
-                                          "coord": {
-                                            "type": "array",
-                                            "items": {
-                                              "type": "number"
-                                            }
-                                          },
-                                          "niveau": {
-                                            "type": "integer"
-                                          },
-                                          "disassembledName": {
-                                            "type": "string"
-                                          }
-                                        },
-                                        "required": [
-                                          "isGlobalId",
-                                          "id",
-                                          "name",
-                                          "disassembledName",
-                                          "type",
-                                          "parent",
-                                          "properties",
-                                          "coord",
-                                          "niveau"
-                                        ],
-                                        "x-apidog-orders": [
-                                          "id",
-                                          "name",
-                                          "type",
-                                          "isGlobalId",
-                                          "parent",
-                                          "properties",
-                                          "coord",
-                                          "niveau",
-                                          "disassembledName"
-                                        ]
-                                      },
-                                      "productClasses": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "integer"
-                                        }
-                                      },
-                                      "properties": {
-                                        "type": "object",
-                                        "properties": {
-                                          "stopId": {
-                                            "type": "string"
-                                          },
-                                          "AREA_NIVEAU_DIVA": {
-                                            "type": "string"
-                                          },
-                                          "area": {
-                                            "type": "string"
-                                          },
-                                          "platform": {
-                                            "type": "string"
-                                          },
-                                          "accessArray": {
-                                            "type": "array",
-                                            "items": {
-                                              "type": "object",
-                                              "properties": {
-                                                "stoppointAccess": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "equipment": {
-                                                      "type": "integer"
-                                                    },
-                                                    "maxWeight": {
-                                                      "type": "integer"
-                                                    },
-                                                    "distanceTrack": {
-                                                      "type": "integer"
-                                                    },
-                                                    "lengthAvail": {
-                                                      "type": "integer"
-                                                    },
-                                                    "widthAvail": {
-                                                      "type": "integer"
-                                                    },
-                                                    "attributes": {
-                                                      "type": "integer"
-                                                    },
-                                                    "stepFromStreet": {
-                                                      "type": "integer"
-                                                    },
-                                                    "height": {
-                                                      "type": "integer"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "equipment",
-                                                    "maxWeight",
-                                                    "distanceTrack",
-                                                    "lengthAvail",
-                                                    "widthAvail",
-                                                    "attributes",
-                                                    "stepFromStreet"
-                                                  ],
-                                                  "x-apidog-orders": [
-                                                    "equipment",
-                                                    "maxWeight",
-                                                    "distanceTrack",
-                                                    "lengthAvail",
-                                                    "widthAvail",
-                                                    "attributes",
-                                                    "stepFromStreet",
-                                                    "height"
-                                                  ]
-                                                }
-                                              },
-                                              "required": [
-                                                "stoppointAccess"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "stoppointAccess"
-                                              ]
-                                            }
-                                          },
-                                          "stoppingPointPlanned": {
-                                            "type": "string"
-                                          },
-                                          "platformName": {
-                                            "type": "string"
-                                          },
-                                          "plannedPlatformName": {
-                                            "type": "string"
-                                          },
-                                          "zone": {
-                                            "type": "string"
-                                          },
-                                          "areaGid": {
-                                            "type": "string"
-                                          }
-                                        },
-                                        "required": [
-                                          "AREA_NIVEAU_DIVA",
-                                          "areaGid",
-                                          "area",
-                                          "platform",
-                                          "accessArray",
-                                          "zone"
-                                        ],
-                                        "x-apidog-orders": [
-                                          "stopId",
-                                          "AREA_NIVEAU_DIVA",
-                                          "area",
-                                          "platform",
-                                          "accessArray",
-                                          "stoppingPointPlanned",
-                                          "platformName",
-                                          "plannedPlatformName",
-                                          "zone",
-                                          "areaGid"
-                                        ]
-                                      },
-                                      "departureTimePlanned": {
-                                        "type": "string"
-                                      },
-                                      "arrivalTimePlanned": {
-                                        "type": "string"
-                                      },
-                                      "pointType": {
-                                        "type": "string"
-                                      },
-                                      "disassembledName": {
-                                        "type": "string"
-                                      },
-                                      "departureTimeEstimated": {
-                                        "type": "string"
-                                      },
-                                      "arrivalTimeEstimated": {
-                                        "type": "string"
-                                      }
-                                    },
-                                    "required": [
-                                      "isGlobalId",
-                                      "id",
-                                      "name",
-                                      "type",
-                                      "coord",
-                                      "niveau",
-                                      "parent",
-                                      "productClasses",
-                                      "properties",
-                                      "departureTimePlanned",
-                                      "arrivalTimePlanned",
-                                      "pointType",
-                                      "disassembledName",
-                                      "departureTimeEstimated",
-                                      "arrivalTimeEstimated"
-                                    ],
-                                    "x-apidog-orders": [
-                                      "isGlobalId",
-                                      "id",
-                                      "name",
-                                      "type",
-                                      "coord",
-                                      "niveau",
-                                      "parent",
-                                      "productClasses",
-                                      "properties",
-                                      "departureTimePlanned",
-                                      "arrivalTimePlanned",
-                                      "pointType",
-                                      "disassembledName",
-                                      "departureTimeEstimated",
-                                      "arrivalTimeEstimated"
-                                    ]
-                                  }
-                                },
-                                "infos": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "priority": {
-                                        "type": "string"
-                                      },
-                                      "id": {
-                                        "type": "string"
-                                      },
-                                      "version": {
-                                        "type": "integer"
-                                      },
-                                      "type": {
-                                        "type": "string"
-                                      },
-                                      "infoLinks": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "object",
-                                          "properties": {
-                                            "urlText": {
-                                              "type": "string"
-                                            },
-                                            "url": {
-                                              "type": "string"
-                                            },
-                                            "content": {
-                                              "type": "string"
-                                            },
-                                            "subtitle": {
-                                              "type": "string"
-                                            },
-                                            "title": {
-                                              "type": "string"
-                                            },
-                                            "properties": {
-                                              "type": "object",
-                                              "properties": {
-                                                "publisher": {
-                                                  "type": "string"
-                                                },
-                                                "infoType": {
-                                                  "type": "string"
-                                                },
-                                                "incidentDateTime": {
-                                                  "type": "string"
-                                                }
-                                              },
-                                              "required": [
-                                                "publisher",
-                                                "infoType",
-                                                "incidentDateTime"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "publisher",
-                                                "infoType",
-                                                "incidentDateTime"
-                                              ]
-                                            }
-                                          },
-                                          "required": [
-                                            "urlText",
-                                            "url",
-                                            "content",
-                                            "subtitle",
-                                            "title",
-                                            "properties"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "urlText",
-                                            "url",
-                                            "content",
-                                            "subtitle",
-                                            "title",
-                                            "properties"
-                                          ]
-                                        }
-                                      }
-                                    },
-                                    "required": [
-                                      "priority",
-                                      "id",
-                                      "version",
-                                      "type",
-                                      "infoLinks"
-                                    ],
-                                    "x-apidog-orders": [
-                                      "priority",
-                                      "id",
-                                      "version",
-                                      "type",
-                                      "infoLinks"
-                                    ]
-                                  }
-                                },
-                                "coords": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "array",
-                                    "items": {
-                                      "oneOf": [
-                                        {
-                                          "type": "number"
-                                        },
-                                        {
-                                          "properties": {
-                                            "d": {
-                                              "type": "number"
-                                            }
-                                          },
-                                          "type": "object",
-                                          "x-apidog-orders": [
-                                            "d"
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                },
-                                "pathDescriptions": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "turnDirection": {
-                                        "type": "string"
-                                      },
-                                      "manoeuvre": {
-                                        "type": "string"
-                                      },
-                                      "name": {
-                                        "type": "string"
-                                      },
-                                      "coord": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "number"
-                                        }
-                                      },
-                                      "duration": {
-                                        "type": "integer"
-                                      },
-                                      "cumDuration": {
-                                        "type": "integer"
-                                      },
-                                      "distance": {
-                                        "type": "integer"
-                                      },
-                                      "cumDistance": {
-                                        "type": "integer"
-                                      },
-                                      "fromCoordsIndex": {
-                                        "type": "integer"
-                                      },
-                                      "toCoordsIndex": {
-                                        "type": "integer"
-                                      },
-                                      "properties": {
-                                        "type": "object",
-                                        "properties": {
-                                          "INDOOR_TYPE": {
-                                            "type": "string"
-                                          },
-                                          "TRACK_ILLUMINATED": {
-                                            "type": "string"
-                                          },
-                                          "FLOOR_LEVEL_CHANGE_DIRECTION": {
-                                            "type": "string"
-                                          },
-                                          "FLOOR_LEVEL_DIFFERENCE": {
-                                            "type": "string"
-                                          },
-                                          "OUTDOOR_TYPE": {
-                                            "type": "string"
-                                          }
-                                        },
-                                        "required": [
-                                          "TRACK_ILLUMINATED"
-                                        ],
-                                        "x-apidog-orders": [
-                                          "INDOOR_TYPE",
-                                          "TRACK_ILLUMINATED",
-                                          "FLOOR_LEVEL_CHANGE_DIRECTION",
-                                          "FLOOR_LEVEL_DIFFERENCE",
-                                          "OUTDOOR_TYPE"
-                                        ]
-                                      },
-                                      "skyDirection": {
-                                        "type": "integer"
-                                      }
-                                    },
-                                    "required": [
-                                      "turnDirection",
-                                      "manoeuvre",
-                                      "name",
-                                      "coord",
-                                      "duration",
-                                      "cumDuration",
-                                      "distance",
-                                      "cumDistance",
-                                      "fromCoordsIndex",
-                                      "toCoordsIndex",
-                                      "properties",
-                                      "skyDirection"
-                                    ],
-                                    "x-apidog-orders": [
-                                      "turnDirection",
-                                      "manoeuvre",
-                                      "name",
-                                      "coord",
-                                      "duration",
-                                      "cumDuration",
-                                      "distance",
-                                      "cumDistance",
-                                      "fromCoordsIndex",
-                                      "toCoordsIndex",
-                                      "properties",
-                                      "skyDirection"
-                                    ]
-                                  }
-                                },
-                                "interchange": {
-                                  "type": "object",
-                                  "properties": {
-                                    "desc": {
-                                      "type": "string"
-                                    },
-                                    "type": {
-                                      "type": "integer"
-                                    },
-                                    "coords": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "number"
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "required": [
-                                    "desc",
-                                    "type",
-                                    "coords"
-                                  ],
-                                  "x-apidog-orders": [
-                                    "desc",
-                                    "type",
-                                    "coords"
-                                  ]
-                                },
-                                "properties": {
-                                  "type": "object",
-                                  "properties": {
-                                    "vehicleAccess": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "object",
-                                        "properties": {
-                                          "height": {
-                                            "type": "integer"
-                                          },
-                                          "halfWidth": {
-                                            "type": "integer"
-                                          },
-                                          "doorWidth": {
-                                            "type": "integer"
-                                          },
-                                          "attributes": {
-                                            "type": "integer"
-                                          },
-                                          "areaToStay": {
-                                            "type": "integer"
-                                          },
-                                          "areaToMove": {
-                                            "type": "integer"
-                                          },
-                                          "equipments": {
-                                            "type": "array",
-                                            "items": {
-                                              "type": "object",
-                                              "properties": {
-                                                "vehicleEquipment": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "equipmentType": {
-                                                      "type": "integer"
-                                                    },
-                                                    "length": {
-                                                      "type": "integer"
-                                                    },
-                                                    "width": {
-                                                      "type": "integer"
-                                                    },
-                                                    "lengthAtPl": {
-                                                      "type": "integer"
-                                                    },
-                                                    "widthAtPl": {
-                                                      "type": "integer"
-                                                    },
-                                                    "maxWeight": {
-                                                      "type": "integer"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "equipmentType",
-                                                    "length",
-                                                    "width",
-                                                    "lengthAtPl",
-                                                    "widthAtPl",
-                                                    "maxWeight"
-                                                  ],
-                                                  "x-apidog-orders": [
-                                                    "equipmentType",
-                                                    "length",
-                                                    "width",
-                                                    "lengthAtPl",
-                                                    "widthAtPl",
-                                                    "maxWeight"
-                                                  ]
-                                                }
-                                              },
-                                              "required": [
-                                                "vehicleEquipment"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "vehicleEquipment"
-                                              ]
-                                            }
-                                          }
-                                        },
-                                        "required": [
-                                          "height",
-                                          "halfWidth",
-                                          "doorWidth",
-                                          "attributes",
-                                          "areaToStay",
-                                          "areaToMove",
-                                          "equipments"
-                                        ],
-                                        "x-apidog-orders": [
-                                          "height",
-                                          "halfWidth",
-                                          "doorWidth",
-                                          "attributes",
-                                          "areaToStay",
-                                          "areaToMove",
-                                          "equipments"
-                                        ]
-                                      }
-                                    },
-                                    "PlanLowFloorVehicle": {
-                                      "type": "string"
-                                    },
-                                    "PlanWheelChairAccess": {
-                                      "type": "string"
-                                    },
-                                    "lineType": {
-                                      "type": "array",
-                                      "items": {
-                                        "type": "string"
-                                      }
-                                    }
-                                  },
-                                  "required": [
-                                    "vehicleAccess",
-                                    "PlanLowFloorVehicle",
-                                    "PlanWheelChairAccess"
-                                  ],
-                                  "x-apidog-orders": [
-                                    "vehicleAccess",
-                                    "PlanLowFloorVehicle",
-                                    "PlanWheelChairAccess",
-                                    "lineType"
-                                  ]
-                                },
-                                "footPathInfo": {
-                                  "type": "array",
-                                  "items": {
-                                    "type": "object",
-                                    "properties": {
-                                      "position": {
-                                        "type": "string"
-                                      },
-                                      "duration": {
-                                        "type": "integer"
-                                      },
-                                      "footPathElem": {
-                                        "type": "array",
-                                        "items": {
-                                          "type": "object",
-                                          "properties": {
-                                            "description": {
-                                              "type": "string"
-                                            },
-                                            "type": {
-                                              "type": "string"
-                                            },
-                                            "levelFrom": {
-                                              "type": "integer"
-                                            },
-                                            "levelTo": {
-                                              "type": "integer"
-                                            },
-                                            "level": {
-                                              "type": "string"
-                                            },
-                                            "origin": {
-                                              "type": "object",
-                                              "properties": {
-                                                "id": {
-                                                  "type": "string"
-                                                },
-                                                "isGlobalId": {
-                                                  "type": "boolean"
-                                                },
-                                                "type": {
-                                                  "type": "string"
-                                                },
-                                                "name": {
-                                                  "type": "string"
-                                                },
-                                                "coord": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number"
-                                                  }
-                                                },
-                                                "properties": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "area": {
-                                                      "type": "integer"
-                                                    },
-                                                    "platform": {
-                                                      "type": "integer"
-                                                    },
-                                                    "georef": {
-                                                      "type": "string"
-                                                    },
-                                                    "areaGid": {
-                                                      "type": "string"
-                                                    },
-                                                    "areaType": {
-                                                      "type": "integer"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "area",
-                                                    "platform",
-                                                    "georef",
-                                                    "areaGid",
-                                                    "areaType"
-                                                  ],
-                                                  "x-apidog-orders": [
-                                                    "area",
-                                                    "platform",
-                                                    "georef",
-                                                    "areaGid",
-                                                    "areaType"
-                                                  ]
-                                                }
-                                              },
-                                              "required": [
-                                                "id",
-                                                "isGlobalId",
-                                                "type",
-                                                "name",
-                                                "coord",
-                                                "properties"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "id",
-                                                "isGlobalId",
-                                                "type",
-                                                "name",
-                                                "coord",
-                                                "properties"
-                                              ]
-                                            },
-                                            "destination": {
-                                              "type": "object",
-                                              "properties": {
-                                                "id": {
-                                                  "type": "string"
-                                                },
-                                                "isGlobalId": {
-                                                  "type": "boolean"
-                                                },
-                                                "type": {
-                                                  "type": "string"
-                                                },
-                                                "name": {
-                                                  "type": "string"
-                                                },
-                                                "coord": {
-                                                  "type": "array",
-                                                  "items": {
-                                                    "type": "number"
-                                                  }
-                                                },
-                                                "properties": {
-                                                  "type": "object",
-                                                  "properties": {
-                                                    "area": {
-                                                      "type": "integer"
-                                                    },
-                                                    "platform": {
-                                                      "type": "integer"
-                                                    },
-                                                    "georef": {
-                                                      "type": "string"
-                                                    },
-                                                    "areaGid": {
-                                                      "type": "string"
-                                                    },
-                                                    "areaType": {
-                                                      "type": "integer"
-                                                    }
-                                                  },
-                                                  "required": [
-                                                    "area",
-                                                    "platform",
-                                                    "georef",
-                                                    "areaGid",
-                                                    "areaType"
-                                                  ],
-                                                  "x-apidog-orders": [
-                                                    "area",
-                                                    "platform",
-                                                    "georef",
-                                                    "areaGid",
-                                                    "areaType"
-                                                  ]
-                                                }
-                                              },
-                                              "required": [
-                                                "id",
-                                                "isGlobalId",
-                                                "type",
-                                                "name",
-                                                "coord",
-                                                "properties"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "id",
-                                                "isGlobalId",
-                                                "type",
-                                                "name",
-                                                "coord",
-                                                "properties"
-                                              ]
-                                            },
-                                            "attributes": {
-                                              "type": "object",
-                                              "properties": {
-                                                "duration": {
-                                                  "type": "integer"
-                                                },
-                                                "distance": {
-                                                  "type": "integer"
-                                                },
-                                                "narrowestWidth": {
-                                                  "type": "integer"
-                                                },
-                                                "elevLength": {
-                                                  "type": "integer"
-                                                },
-                                                "elevWidth": {
-                                                  "type": "integer"
-                                                },
-                                                "elevDoorWidth": {
-                                                  "type": "integer"
-                                                },
-                                                "rampLength": {
-                                                  "type": "integer"
-                                                },
-                                                "rampWidth": {
-                                                  "type": "integer"
-                                                },
-                                                "rampInclination": {
-                                                  "type": "integer"
-                                                },
-                                                "numberSteps": {
-                                                  "type": "integer"
-                                                },
-                                                "maxStepHeight": {
-                                                  "type": "integer"
-                                                }
-                                              },
-                                              "required": [
-                                                "duration",
-                                                "distance",
-                                                "narrowestWidth",
-                                                "elevLength",
-                                                "elevWidth",
-                                                "elevDoorWidth",
-                                                "rampLength",
-                                                "rampWidth",
-                                                "rampInclination",
-                                                "numberSteps",
-                                                "maxStepHeight"
-                                              ],
-                                              "x-apidog-orders": [
-                                                "duration",
-                                                "distance",
-                                                "narrowestWidth",
-                                                "elevLength",
-                                                "elevWidth",
-                                                "elevDoorWidth",
-                                                "rampLength",
-                                                "rampWidth",
-                                                "rampInclination",
-                                                "numberSteps",
-                                                "maxStepHeight"
-                                              ]
-                                            },
-                                            "openingHours": {
-                                              "type": "array",
-                                              "items": {
-                                                "type": "string"
-                                              }
-                                            }
-                                          },
-                                          "required": [
-                                            "description",
-                                            "type",
-                                            "levelFrom",
-                                            "levelTo",
-                                            "level",
-                                            "origin",
-                                            "destination",
-                                            "attributes",
-                                            "openingHours"
-                                          ],
-                                          "x-apidog-orders": [
-                                            "description",
-                                            "type",
-                                            "levelFrom",
-                                            "levelTo",
-                                            "level",
-                                            "origin",
-                                            "destination",
-                                            "attributes",
-                                            "openingHours"
-                                          ]
-                                        }
-                                      }
-                                    },
-                                    "required": [
-                                      "position",
-                                      "duration",
-                                      "footPathElem"
-                                    ],
-                                    "x-apidog-orders": [
-                                      "position",
-                                      "duration",
-                                      "footPathElem"
-                                    ]
-                                  }
-                                },
-                                "footPathInfoRedundant": {
-                                  "type": "boolean"
-                                }
-                              },
-                              "required": [
-                                "duration",
-                                "distance",
-                                "origin",
-                                "destination",
-                                "transportation",
-                                "hints",
-                                "stopSequence",
-                                "infos",
-                                "coords",
-                                "pathDescriptions",
-                                "properties",
-                                "interchange",
-                                "footPathInfo",
-                                "footPathInfoRedundant"
-                              ],
-                              "x-apidog-orders": [
-                                "duration",
-                                "distance",
-                                "origin",
-                                "destination",
-                                "transportation",
-                                "hints",
-                                "stopSequence",
-                                "infos",
-                                "coords",
-                                "pathDescriptions",
-                                "interchange",
-                                "properties",
-                                "footPathInfo",
-                                "footPathInfoRedundant"
-                              ]
-                            }
-                          },
-                          "fare": {
-                            "type": "object",
-                            "properties": {
-                              "tickets": {
-                                "type": "array",
-                                "items": {
-                                  "type": "string"
-                                }
-                              }
-                            },
-                            "required": [
-                              "tickets"
-                            ],
-                            "x-apidog-orders": [
-                              "tickets"
-                            ]
-                          },
-                          "daysOfService": {
-                            "type": "object",
-                            "properties": {
-                              "rvb": {
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "rvb"
-                            ],
-                            "x-apidog-orders": [
-                              "rvb"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "rating",
-                          "isAdditional",
-                          "interchanges",
-                          "legs",
-                          "fare",
-                          "daysOfService"
-                        ],
-                        "x-apidog-orders": [
-                          "rating",
-                          "isAdditional",
-                          "interchanges",
-                          "legs",
-                          "fare",
-                          "daysOfService"
-                        ],
-                        "$ref": "#/definitions/672004",
-                        "type": "object"
+                        "$ref": "#/definitions/672004"
                       }
                     }
                   },
@@ -10199,6 +8394,10 @@
                 "tripImpossible": {
                   "type": "boolean",
                   "description": "Die Fahrt ist unmöglich. Tritt auf, wenn eine Fahrt aktualisiert wird und ein Umstieg nicht mehr erreicht werden kann oder eine ausfallende Fahrt angefragt wurde (realDesc=2)."
+                },
+                "realtimeExplanationIdx": {
+                  "type": "string",
+                  "description": "???"
                 }
               },
               "required": [
@@ -10211,13 +8410,15 @@
                 "explainedByIdx",
                 "notRecommended",
                 "isRealtimeOnlyInformative",
-                "tripImpossible"
+                "tripImpossible",
+                "realtimeExplanationIdx"
               ],
               "x-apidog-orders": [
                 "rating",
                 "isAdditional",
                 "notRecommended",
                 "explainedByIdx",
+                "realtimeExplanationIdx",
                 "interchanges",
                 "legs",
                 "fare",
@@ -12251,7 +10452,7 @@
                 },
                 "id": {
                   "type": "string",
-                  "description": "Information-ID"
+                  "description": "Informations-ID"
                 },
                 "version": {
                   "type": "integer",
@@ -12259,17 +10460,41 @@
                 },
                 "priority": {
                   "type": "string",
+                  "description": "Priorität der Information / Störungsmeldung",
                   "enum": [
-                    "normal"
+                    "normal",
+                    "high",
+                    "veryHigh",
+                    "veryLow",
+                    "low"
                   ],
                   "x-apidog-enum": [
                     {
                       "value": "normal",
                       "name": "",
                       "description": ""
+                    },
+                    {
+                      "value": "high",
+                      "name": "",
+                      "description": ""
+                    },
+                    {
+                      "value": "veryHigh",
+                      "name": "",
+                      "description": ""
+                    },
+                    {
+                      "value": "veryLow",
+                      "name": "",
+                      "description": ""
+                    },
+                    {
+                      "value": "low",
+                      "name": "",
+                      "description": ""
                     }
-                  ],
-                  "description": "Priorität der Information / Störungsmeldung"
+                  ]
                 },
                 "infoLinks": {
                   "type": "array",
@@ -13110,23 +11335,29 @@
               "properties": {
                 "position": {
                   "type": "string",
+                  "description": "Position des Fußweges im Kontext des Legs",
                   "enum": [
                     "IDEST",
-                    "BEFORE"
+                    "BEFORE",
+                    "AFTER"
                   ],
                   "x-apidog-enum": [
                     {
                       "value": "IDEST",
                       "name": "",
-                      "description": ""
+                      "description": "Beim Leg handelt es sich um einen Fußweg (redundant)"
                     },
                     {
                       "value": "BEFORE",
                       "name": "",
-                      "description": ""
+                      "description": "Fußweg findet vor dem eigentlichen Leg statt"
+                    },
+                    {
+                      "value": "AFTER",
+                      "name": "",
+                      "description": "Fußweg findet nach dem eigentlichen Leg statt"
                     }
-                  ],
-                  "description": "???"
+                  ]
                 },
                 "duration": {
                   "type": "integer",
@@ -13390,7 +11621,8 @@
                       "attributes",
                       "openingHours"
                     ],
-                    "$ref": "#/definitions/672036"
+                    "$ref": "#/definitions/672036",
+                    "type": "object"
                   }
                 }
               },
@@ -14853,7 +13085,7 @@
                 },
                 "id": {
                   "type": "string",
-                  "description": "Information-ID"
+                  "description": "Informations-ID"
                 },
                 "version": {
                   "type": "integer",
