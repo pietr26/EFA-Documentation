@@ -1,13 +1,13 @@
 # Dokumentation der internen EFA-API
 
-Diese API ist nicht die offizielle EFA-Webservice-API, sondern diejenige, die von der Webseite selbst verwendet wird – sie ist schneller, liefert mehr Daten und unterstützt statt exklusiv XML-Output auch jenen in JSON.
+Diese API ist nicht die offizielle EFA-Webservice-API unter https://v4-api.efa.de/, sondern diejenige, die von der Webseite selbst verwendet wird – sie besitzt eine deutlich bessere Detailtiefe und unterstützt statt ausschließlichen XML-Output auch jenen in JSON.
 
 ## Motivation
-Die offizielle EFA-API ist zwar gut und ausführlich dokumentiert, liefert jedoch nur XML-Antworten und ist hinsichtlich der Detailtiefe der Daten ungenau. Nachdem ich mich mehrere Monate mit der offiziellen API, zufrieden mit der Detailtiefe und gequält durch den XML-Output, habe ich mich nach einer Alternative umgeschaut.
+Die offizielle EFA-API ist zwar gut und ausführlich dokumentiert, liefert jedoch nur XML-Antworten und ist hinsichtlich der Detailtiefe der Daten ungenau. Nachdem ich mich mehrere Monate mit der offiziellen API - gequält durch den XML-Output - habe ich mich nach einer Alternative umgeschaut.
 
-Beim Blick ins Netzwerkprotokoll auf efa.de fiel mir auf, dass die Webseite eine andere, interne API (folgend: IntAPI) nutzt.
+Beim Blick ins Netzwerkprotokoll auf efa.de fiel mir auf, dass die Webseite eine andere, interne API (folgend einfach "IntAPI" genannt) nutzt.
 
-Ziel dieses Projekts ist es, die IntAPI zugänglich und nachvollziehbar zu machen.
+Ziel dieses Projekts ist es, die IntAPI zugänglicher und nachvollziehbar zu machen, da gute und öffentliche ÖP(N)V-APIs bekanntlicherweise eher Mangelware sind.
 
 ## Unterschiede zwischen der offiziellen API und der IntAPI
 <table>
@@ -29,26 +29,27 @@ Ziel dieses Projekts ist es, die IntAPI zugänglich und nachvollziehbar zu mache
   <tr>
     <td>Dokumentation</td>
     <td><a href="https://www.vdv.de/431-2-sdsv1.2.pdfx" target="_blank">Offiziell</a></td>
-    <td>nur inoffiziell - hier</td>
+    <td>nur inoffiziell - hier und von einigen unvollständigen Dokus von VU/VV</td>
   </tr>
   <tr>
     <td>Anfragelimit</td>
-    <td>10000 pro Tag (pro Zugang)</td>
-    <td>keine Beschränkung bzw. unbekannt</td>
+    <td>10000 pro Tag pro Zugang</td>
+    <td>keine Beschränkung / unbekannt</td>
   </tr>
   <tr>
-    <td>Mögliche Detailtiefe der Anfrage</td>
-    <td>hoch</td>
-    <td>(mindestens) mittel<br><sup>tw. exklusive Parameter</sup></td>
+    <td>Detailtiefe der Requests</td>
+    <td>mittel<br><sup>lt. Doku zwar hoch, mehrere funktionieren allerdings nicht</sup></td>
+    <td>hoch<br><sup>viele exklusive Parameter im Vergleich</sup></td>
   </tr>
   <tr>
-    <td>Mögliche Detailtiefe der Antwort</td>
-    <td>mittel</td>
-    <td>sehr hoch</td>
+    <td>Detailtiefe der Responses</td>
+    <td>mittel, wenige Endpunkte</td>
+    <td>sehr hoch, teilw. sehr spezifische Endpunkte</td>
   </tr>
   <tr>
-    <td>Ø Antwortzeit bei Verbindungsabfrage</td>
-    <td colspan="2" align="center">500-1000ms (tageszeitabhängig)</td>
+    <td>Modularität</td>
+    <td>nur für Daten von efa.de</td>
+    <td>universell auf jegliche EFA-Instanzen anwendbar</td>
   </tr>
 </table>
 
@@ -67,7 +68,7 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   <tr>
     <td>A</td>
     <td><code>https://efa.de/efa/</code></td>
-    <td>gesamt Deutschland</td>
+    <td>Deutschland</td>
     <td>Hannover, Braunschweig, Hameln</td>
     <td><img src="https://geps.dev/progress/80"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/6">#6</a>)</td>
   </tr>
@@ -136,9 +137,9 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   </tr>
 </table>
 
-In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI angegeben, kann aber 1:1 durch eine der o.g. Alternativen (bis auf die offizielle API) ersetzt werden.
+In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI von efa.de angegeben, kann aber 1:1 durch eine der o.g. Alternativen ersetzt werden.
 
-Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie oder eine Teilmenge der Daten der schon o.g. Dienste. Die Beurteilung dieser Doppelungen findet anhand einer Abfrage von <code>XML_ADDINFO_REQUEST</code> und anschließendem Vergleich der ausgegebenen Meldungen statt, da sich diese erfahrungsgemäß nur auf das abgedeckte Verkehrsgebiet beschränken. Die doppelten Dienste können zwar genutzt werden, aufgrund keiner weiteren Prüfung kann es hier jedoch noch zu Unterschieden kommen oder geringeren Datenmengen kommen. Aus dem Grunde empfehle ich einfach die Nutzung der obigen Dienste, die eh ja nicht weniger abdecken.
+Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie oder eine Teilmenge der Daten der schon o.g. Dienste. Die Beurteilung dieser Doppelungen findet anhand einer Abfrage von <code>XML_ADDINFO_REQUEST</code> und anschließendem Vergleich der ausgegebenen Meldungen statt, da sich diese erfahrungsgemäß nur auf das abgedeckte Verkehrsgebiet beschränken. Die doppelten Dienste können zwar genutzt werden, aufgrund keiner weiteren Prüfung kann es hier jedoch noch zu Unterschieden kommen oder geringeren Datenmengen kommen. Aus dem Grunde empfehle ich einfach die Nutzung der obigen Dienste, die eh ja nicht weniger als ihre Duplikate abdecken.
 <table>
   <tr>
     <th>URL</th>
@@ -169,7 +170,7 @@ Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie o
     <td>DE-BWS</td>
   </tr>
   <tr>
-    <td><code>https://www.fahrplanauskunft-mv.de/vmv-efa/</code> (MV)<br>Tatsächlich enthalten MV und BW dieselben Daten</td>
+    <td><code>https://www.fahrplanauskunft-mv.de/vmv-efa/</code> (MV)<br>Mecklenburg-Vorpommern und Banden-Würrtemberg nutzen eine gemeinsame EFA-Instanz</td>
     <td>DE-BWS</td>
   </tr>
   <tr>
@@ -200,14 +201,14 @@ Falls du...
 <a href="https://github.com/pietr26/EFA-Documentation/issues" target="_blank">eröffne gerne ein Issue</a>!
 
 ## Disclaimer
-Ich oder dieses Projekt steht in keiner Verbindung zu den Betreibern von efa.de oder anderen EFA-basierten Diensten.
+Ich oder dieses Projekt steht in keiner Verbindung zu den Betreibern von efa.de oder anderen Unternehmen/Verbünden, die EFA einsetzen.
 
-Die hier dokumentierte Schnittstelle ist nicht offiziell dokumentiert oder freigegeben und kann sich jederzeit ändern.
+Die hier dokumentierte Schnittstelle ist nicht offiziell dokumentiert oder freigegeben und kann sich theoretisch jederzeit ändern.
 Die Informationen wurden ausschließlich durch die Analyse öffentlich zugänglicher Netzwerkrequests der Webseiten gewonnen.
 
 Nutzung auf eigene Verantwortung.
 
 ## <a id="contentHints"></a>Inhaltliche Hinweise
 - **Dokumentation bezieht sich auf `rapidJSON`-Format**: Die gesamte Dokumentation wurde auf Basis von `rapidJSON`-Outputs erstellt und wird auch auf Basis dieser geplegt - inbesondere die nicht-verarbeiten Ausgabeformate haben bedeutend andere Response-Datenstrukturen, u.U. ist `rapidXML` davon auch betroffen. Die Wahl fiel auf JSON im allgemeinen, da dieses Format im Gegensatz zu XML moderner ist und auch höher typisiert (eindeutiger) ist.
-- **Gruppierung von Request-Parametern:** Insbesondere bei Anfragen mit vielen Parametern habe ich Hilfsparameter (z.B. "--- ALLGEMEIN ---") eingefügt, um die Parameter etwas zu gruppieren und für etwas mehr Übersicht zu sorgen. Diese können (für Tests) so ruhig mitgesendet werden, das stört die Dienste nicht besonders - aber natürlich müssen die bei richtigen Implementierungen nicht mitgesendet werden.
-- **Parameterdoppelungen:** Einige Request-Parameter doppeln sich in ihrer Funktion (z.B. Zeitauswahl: auch Parameter zum separeten Setzen von Jahr, Monat und Tag verfügbar). Der Übersichtlichkeit halber wurden diese Doppelungen nicht mit in die Dokumentation aufgenommen. Die aufgenommen Parameter erfüllen (mindestens) alle Funktionen, die die nicht betrachteten Parameter auch erfüllen.
+- **Gruppierung von Request-Parametern:** Insbesondere bei Anfragen mit vielen Parametern habe ich Hilfsparameter (z.B. "--- ALLGEMEIN ---") eingefügt, um die Parameter etwas zu gruppieren und für etwas mehr Übersicht zu sorgen. Diese können für Tests in der Apidog-Oberfläche problemlos mitgesendet werden, das stört die Dienste nicht.
+- **Parameterdoppelungen:** Einige Request-Parameter doppeln sich in ihrer Funktion (z.B. Zeitauswahl: auch Parameter zum separeten Setzen von Jahr, Monat und Tag verfügbar). Der Übersichtlichkeit halber wurden diese Doppelungen nicht mit in die Dokumentation aufgenommen. Die aufgenommen Parameter erfüllen (mindestens) alle Funktionen, die die nicht erwähnten Parameter auch erfüllen.
