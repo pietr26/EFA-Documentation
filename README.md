@@ -69,7 +69,7 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td>A</td>
     <td><code>https://efa.de/efa/</code></td>
     <td>Deutschland</td>
-    <td>Hannover, Braunschweig, Hameln</td>
+    <td>Stadt+Region Hannover, Hildesheim, Braunschweig, Hameln</td>
     <td><img src="https://geps.dev/progress/80"> (<a href="https://github.com/pietr26/EFA-Documentation/issues/6">#6</a>)</td>
   </tr>
   <tr>
