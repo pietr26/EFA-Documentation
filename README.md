@@ -1,20 +1,20 @@
-# Dokumentation der internen EFA-API
+# Dokumentation der EFA-Web-API
 
 Diese API ist nicht die offizielle EFA-Webservice-API unter https://v4-api.efa.de/, sondern diejenige, die von der Webseite selbst verwendet wird – sie besitzt eine deutlich bessere Detailtiefe und unterstützt statt ausschließlichen XML-Output auch jenen in JSON.
 
 ## Motivation
 Die offizielle EFA-API ist zwar gut und ausführlich dokumentiert, liefert jedoch nur XML-Antworten und ist hinsichtlich der Detailtiefe der Daten ungenau. Nachdem ich mich mehrere Monate mit der offiziellen API - gequält durch den XML-Output - habe ich mich nach einer Alternative umgeschaut.
 
-Beim Blick ins Netzwerkprotokoll auf efa.de fiel mir auf, dass die Webseite eine andere, interne API (folgend einfach "IntAPI" genannt) nutzt.
+Beim Blick ins Netzwerkprotokoll auf efa.de fiel mir auf, dass die Webseite eine andere, interne API (folgend einfach "WebAPI" genannt) nutzt.
 
-Ziel dieses Projekts ist es, die IntAPI zugänglicher und nachvollziehbar zu machen, da gute und öffentliche ÖP(N)V-APIs bekanntlicherweise eher Mangelware sind.
+Ziel dieses Projekts ist es, die WebAPI zugänglicher und nachvollziehbar zu machen, da gute und öffentliche ÖP(N)V-APIs bekanntlicherweise eher Mangelware sind.
 
-## Unterschiede zwischen der offiziellen API und der IntAPI
+## Unterschiede zwischen der offiziellen API und der WebAPI
 <table>
   <tr>
     <th>Aspekt</th>
     <th>Offizielle API</th>
-    <th>IntAPI</th>
+    <th>WebAPI</th>
   </tr>
   <tr>
     <td>Format</td>
@@ -137,7 +137,7 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
   </tr>
 </table>
 
-In der Dokumentation ist stets der Endpunkt der allgemeinen IntAPI von efa.de angegeben, kann aber 1:1 durch eine der o.g. Alternativen ersetzt werden.
+In der Dokumentation ist stets der Endpunkt der allgemeinen WebAPI von efa.de angegeben, kann aber 1:1 durch eine der o.g. Alternativen ersetzt werden.
 
 Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie oder eine Teilmenge der Daten der schon o.g. Dienste. Die Beurteilung dieser Doppelungen findet anhand einer Abfrage von <code>XML_ADDINFO_REQUEST</code> und anschließendem Vergleich der ausgegebenen Meldungen statt, da sich diese erfahrungsgemäß nur auf das abgedeckte Verkehrsgebiet beschränken. Die doppelten Dienste können zwar genutzt werden, aufgrund keiner weiteren Prüfung kann es hier jedoch noch zu Unterschieden kommen oder geringeren Datenmengen kommen. Aus dem Grunde empfehle ich einfach die Nutzung der obigen Dienste, die eh ja nicht weniger als ihre Duplikate abdecken.
 <table>
