@@ -9618,228 +9618,6 @@
             "inheritPostProcessors": {},
             "inheritPreProcessors": {}
           }
-        },
-        {
-          "name": "- Test -",
-          "api": {
-            "id": "4080507",
-            "method": "get",
-            "path": "XML_TRIPCOMPOSITION_REQUEST",
-            "parameters": {
-              "query": [
-                {
-                  "required": false,
-                  "description": "+++++++++++++++++++++++++",
-                  "type": "string",
-                  "id": "cbdDxL0iuv",
-                  "example": "",
-                  "enable": false,
-                  "name": "--- ALLGEMEIN ---",
-                  "fixedValue": false
-                },
-                {
-                  "required": false,
-                  "description": "Angabe der Version; sonst Nutzung der aktuellsten Version.",
-                  "type": "string",
-                  "id": "VXyzNOQIQY",
-                  "example": "",
-                  "enable": false,
-                  "name": "version",
-                  "fixedValue": false
-                },
-                {
-                  "required": false,
-                  "description": "Gibt Informationen zum Server aus.",
-                  "type": "integer",
-                  "id": "hQJisLPLYN",
-                  "example": "",
-                  "enable": false,
-                  "name": "serverInfo",
-                  "fixedValue": false,
-                  "schema": {
-                    "type": "integer",
-                    "enum": [
-                      0,
-                      1
-                    ],
-                    "x-apidog-enum": [
-                      {
-                        "value": 0,
-                        "name": "",
-                        "description": ""
-                      },
-                      {
-                        "value": 1,
-                        "name": "",
-                        "description": ""
-                      }
-                    ],
-                    "default": 0
-                  }
-                },
-                {
-                  "required": false,
-                  "description": "Gibt die Sprache für Weganweisungen und teilweise Verkehrsmittelhinweise an.",
-                  "type": "string",
-                  "id": "qbpmabYxe3",
-                  "example": "de",
-                  "enable": false,
-                  "name": "language",
-                  "fixedValue": false,
-                  "schema": {
-                    "type": "string",
-                    "format": "uuid<ISO639>"
-                  }
-                },
-                {
-                  "id": "WwOo8I0kvR",
-                  "name": "outputFormat",
-                  "required": false,
-                  "enable": false,
-                  "description": "Angabe des Ausgabeformats",
-                  "example": "rapidJSON",
-                  "type": "string",
-                  "schema": {
-                    "type": "string",
-                    "enum": [
-                      "XML",
-                      "rapidXML",
-                      "JSON",
-                      "rapidJSON"
-                    ],
-                    "x-apidog-enum": [
-                      {
-                        "value": "XML",
-                        "name": "Rohes XML",
-                        "description": ""
-                      },
-                      {
-                        "value": "rapidXML",
-                        "name": "Verarbeitetes XML",
-                        "description": ""
-                      },
-                      {
-                        "value": "JSON",
-                        "name": "Rohes JSON",
-                        "description": ""
-                      },
-                      {
-                        "value": "rapidJSON",
-                        "name": "Verarbeitetes JSON",
-                        "description": ""
-                      }
-                    ],
-                    "default": "XML"
-                  },
-                  "fixedValue": false
-                },
-                {
-                  "required": false,
-                  "description": "+++++++++++++++++++++++++",
-                  "type": "string",
-                  "id": "Q5TNgKCAVG",
-                  "example": "",
-                  "enable": false,
-                  "name": "---  FORMATIERUNG ---",
-                  "fixedValue": false
-                },
-                {
-                  "required": false,
-                  "description": "Ausgabeformatierung für Koordinaten. Sollte stets so angegeben werden, ansonsten kann man mit der Koordinatenausgabe nur wenig anfangen.",
-                  "type": "string",
-                  "id": "c0B2aRg065",
-                  "example": "WGS84[dd.ddddd]",
-                  "enable": false,
-                  "name": "coordOutputFormat",
-                  "fixedValue": false,
-                  "schema": {
-                    "type": "string",
-                    "default": "MDV"
-                  }
-                },
-                {
-                  "required": false,
-                  "description": "+++++++++++++++++++++++++",
-                  "type": "string",
-                  "id": "JtaV0ngmcS",
-                  "example": "",
-                  "enable": false,
-                  "name": "---  KONFIGURATION ---",
-                  "fixedValue": false
-                }
-              ],
-              "path": [],
-              "cookie": [],
-              "header": []
-            },
-            "auth": {},
-            "securityScheme": {},
-            "commonParameters": {
-              "query": [],
-              "body": [],
-              "cookie": [],
-              "header": []
-            },
-            "responses": [
-              {
-                "id": "4358858",
-                "code": 200,
-                "name": "Success",
-                "headers": [],
-                "jsonSchema": {
-                  "$ref": "#/definitions/690119"
-                },
-                "itemSchema": {},
-                "description": "",
-                "contentType": "json",
-                "mediaType": ""
-              }
-            ],
-            "responseExamples": [],
-            "requestBody": {
-              "type": "none",
-              "parameters": [],
-              "jsonSchema": {
-                "type": "object",
-                "properties": {},
-                "x-apidog-orders": []
-              },
-              "required": false,
-              "mediaType": "",
-              "examples": [
-                {
-                  "mediaType": "application/json",
-                  "value": ""
-                }
-              ],
-              "oasExtensions": ""
-            },
-            "description": "Durch diesen Endpunkt erhält man die Haltestellen einer Fahrt, die mit der Linien-ID, ihrer Trip-ID und einem Tag identifiziert wird.",
-            "tags": [],
-            "status": "released",
-            "serverId": "",
-            "operationId": "",
-            "sourceUrl": "",
-            "ordering": 33,
-            "cases": [],
-            "mocks": [],
-            "customApiFields": "{}",
-            "advancedSettings": {
-              "disabledSystemHeaders": {}
-            },
-            "mockScript": {},
-            "codeSamples": [],
-            "commonResponseStatus": {},
-            "responseChildren": [],
-            "visibility": "INHERITED",
-            "moduleId": 309961,
-            "oasExtensions": "",
-            "type": "http",
-            "preProcessors": [],
-            "postProcessors": [],
-            "inheritPostProcessors": {},
-            "inheritPreProcessors": {}
-          }
         }
       ]
     }
@@ -10647,6 +10425,7 @@
                     17,
                     18,
                     19,
+                    97,
                     99,
                     100,
                     107
@@ -10751,6 +10530,11 @@
                       "value": 19,
                       "name": "Kleinbus, Bürgerbus",
                       "description": ""
+                    },
+                    {
+                      "value": 97,
+                      "name": "Umstieg im selben Fahrzeug",
+                      "description": "auch bekannt als \"Sitzenbleiben im Fahrzeug\" – wird bei Verbindungen mit Flügelung eines Zuges angezeigt."
                     },
                     {
                       "value": 99,
