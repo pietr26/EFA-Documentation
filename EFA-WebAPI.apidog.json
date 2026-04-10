@@ -10684,6 +10684,7 @@
                     18,
                     19,
                     97,
+                    98,
                     99,
                     100,
                     107
@@ -10793,6 +10794,11 @@
                       "value": 97,
                       "name": "Umstieg im selben Fahrzeug",
                       "description": "auch bekannt als \"Sitzenbleiben im Fahrzeug\" – wird bei Verbindungen mit Flügelung eines Zuges angezeigt."
+                    },
+                    {
+                      "value": 98,
+                      "name": "Gesicherter Anschluss",
+                      "description": ""
                     },
                     {
                       "value": 99,
