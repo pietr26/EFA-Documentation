@@ -16606,6 +16606,154 @@
           "moduleId": 309961
         },
         {
+          "name": "InformationAttachment",
+          "displayName": "",
+          "id": "#/definitions/794195",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "ID": {
+                  "type": "string",
+                  "description": "ID"
+                },
+                "path": {
+                  "type": "string",
+                  "description": "Pfad; oft ein lokaler Pfad des verarbeitenden Servers etc. – als Produktivlink sollte (und wird) 'virtPath' genutzt."
+                },
+                "fileName": {
+                  "type": "string",
+                  "description": "Dateiname (informativ)"
+                },
+                "virtPath": {
+                  "type": "string",
+                  "description": "Produktive, öffentlich erreichbare URL des Dokuments"
+                },
+                "linkText": {
+                  "type": "string",
+                  "description": "Beschreibung/Name"
+                },
+                "linkTarget": {
+                  "type": "string",
+                  "description": "Linkziel",
+                  "examples": [
+                    "_blank"
+                  ]
+                },
+                "size": {
+                  "type": "integer",
+                  "description": "Größe des Dokuments in Byte"
+                }
+              },
+              "x-apidog-orders": [
+                "ID",
+                "path",
+                "fileName",
+                "virtPath",
+                "linkText",
+                "linkTarget",
+                "size"
+              ],
+              "required": [
+                "ID",
+                "path",
+                "fileName",
+                "virtPath",
+                "linkText",
+                "linkTarget",
+                "size"
+              ],
+              "description": "Dokument, welches eine Information/Störungsmeldung ergänzt"
+            }
+          },
+          "visibility": "INHERITED",
+          "moduleId": 309961
+        },
+        {
+          "name": "InformationAdditionalLink",
+          "displayName": "",
+          "id": "#/definitions/794196",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "language": {
+                  "type": "string",
+                  "title": ""
+                },
+                "urlText": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "subtitle": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "properties": {
+                  "$ref": "#/definitions/794197"
+                }
+              },
+              "x-apidog-orders": [
+                "language",
+                "urlText",
+                "url",
+                "content",
+                "subtitle",
+                "title",
+                "properties"
+              ],
+              "required": [
+                "language",
+                "urlText",
+                "url",
+                "content",
+                "subtitle",
+                "title",
+                "properties"
+              ]
+            }
+          },
+          "visibility": "INHERITED",
+          "moduleId": 309961
+        },
+        {
+          "name": "InformationAdditionalLinkProperties",
+          "displayName": "",
+          "id": "#/definitions/794197",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "linkTarget": {
+                  "type": "string",
+                  "description": "Linkziel",
+                  "examples": [
+                    "_blank"
+                  ]
+                }
+              },
+              "x-apidog-orders": [
+                "linkTarget"
+              ],
+              "required": [
+                "linkTarget"
+              ]
+            }
+          },
+          "visibility": "INHERITED",
+          "moduleId": 309961
+        },
+        {
           "name": "InformationSource",
           "displayName": "",
           "id": "#/definitions/671981",
@@ -16654,8 +16802,7 @@
               "properties": {
                 "urlText": {
                   "type": "string",
-                  "description": "entspricht 'subtitle'",
-                  "deprecated": true
+                  "description": "Wird von einigen Instanzen als Titel genutzt (sollte Fallback für title sein)"
                 },
                 "url": {
                   "type": "string",
@@ -16676,6 +16823,18 @@
                 "additionalContent": {
                   "type": "string",
                   "description": "Weitere Hinweise zur Information. Kann HTML enthalten."
+                },
+                "attachments": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/794195"
+                  }
+                },
+                "additionalLinks": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/794196"
+                  }
                 }
               },
               "x-apidog-orders": [
@@ -16684,12 +16843,16 @@
                 "title",
                 "subtitle",
                 "urlText",
-                "additionalContent"
+                "additionalContent",
+                "attachments",
+                "additionalLinks"
               ],
               "required": [
-                "additionalContent"
+                "additionalContent",
+                "attachments",
+                "additionalLinks"
               ],
-              "description": "Inhalt einer Information / Störungsmeldung"
+              "description": "Inhalt einer Information/Störungsmeldung"
             }
           },
           "visibility": "INHERITED",
