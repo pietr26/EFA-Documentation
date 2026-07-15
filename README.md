@@ -87,6 +87,13 @@ Abgesehen von efa.de lassen sich auch andere EFA-Dienste auf die Dokumentation a
     <td><img src="https://geps.dev/progress/0"></td>
   </tr>
   <tr>
+    <td>DE-VVS</td>
+    <td><code>https://www3.vvs.de/mngvvs/</code></td>
+    <td>...</td>
+    <td>...</td>
+    <td><img src="https://geps.dev/progress/0"></td>
+  </tr>
+  <tr>
     <td>AT-LI</td>
     <td><code>https://www.linzag.at/static/</code><br><code>https://www.linzag.at/linz2/</code></td>
     <td>...</td>
@@ -159,10 +166,6 @@ Folgende Dienste wurden bereits kontrolliert und besitzen die selben Daten wie o
   </tr>
   <tr>
     <td><code>https://www.naldo.de/_assets/012ccdbd1331184d82aa9387f0ed2f73/efa/</code> (naldo)</td>
-    <td>DE-BWS</td>
-  </tr>
-  <tr>
-    <td><code>https://www3.vvs.de/mngvvs/</code> (VVS)</td>
     <td>DE-BWS</td>
   </tr>
   <tr>
