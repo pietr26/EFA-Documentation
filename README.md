@@ -3,7 +3,7 @@
 Diese API ist nicht die offizielle EFA-Webservice-API unter https://v4-api.efa.de/, sondern diejenige, die von der Webseite selbst verwendet wird – sie besitzt eine deutlich bessere Detailtiefe und unterstützt statt ausschließlichen XML-Output auch jenen in JSON.
 
 ## Motivation
-Die offizielle EFA-API ist zwar gut und ausführlich dokumentiert, liefert jedoch nur XML-Antworten und ist hinsichtlich der Detailtiefe der Daten ungenau. Nachdem ich mich mehrere Monate mit der offiziellen API - gequält durch den XML-Output - habe ich mich nach einer Alternative umgeschaut.
+Die offizielle EFA-API ist zwar gut und ausführlich dokumentiert, liefert jedoch nur XML-Antworten und ist hinsichtlich der Detailtiefe der Daten ungenau. Nachdem ich mich mehrere Monate mit der offiziellen API – gequält durch den XML-Output – habe ich mich nach einer Alternative umgeschaut.
 
 Beim Blick ins Netzwerkprotokoll auf efa.de fiel mir auf, dass die Webseite eine andere, interne API (folgend einfach "WebAPI" genannt) nutzt.
 
@@ -29,7 +29,7 @@ Ziel dieses Projekts ist es, die WebAPI zugänglicher und nachvollziehbar zu mac
   <tr>
     <td>Dokumentation</td>
     <td><a href="https://www.vdv.de/431-2-sdsv1.2.pdfx" target="_blank">Offiziell</a></td>
-    <td>nur inoffiziell - hier und von einigen unvollständigen Dokus von VU/VV</td>
+    <td>nur inoffiziell – hier und von einigen unvollständigen Dokus von VU/VV</td>
   </tr>
   <tr>
     <td>Anfragelimit</td>
@@ -212,7 +212,7 @@ Die Informationen wurden ausschließlich durch die Analyse öffentlich zugängli
 Nutzung auf eigene Verantwortung.
 
 ## <a id="contentHints"></a>Inhaltliche Hinweise
-- **Dokumentation bezieht sich auf `rapidJSON`-Format**: Die gesamte Dokumentation wurde auf Basis von `rapidJSON`-Outputs erstellt und wird auch auf Basis dieser geplegt - inbesondere die nicht-verarbeiten Ausgabeformate haben bedeutend andere Response-Datenstrukturen, u.U. ist `rapidXML` davon auch betroffen. Die Wahl fiel auf JSON im allgemeinen, da dieses Format im Gegensatz zu XML moderner ist und auch höher typisiert (eindeutiger) ist.
+- **Dokumentation bezieht sich auf `rapidJSON`-Format**: Die gesamte Dokumentation wurde auf Basis von `rapidJSON`-Outputs erstellt und wird auch auf Basis dieser geplegt – inbesondere die nicht-verarbeiten Ausgabeformate haben bedeutend andere Response-Datenstrukturen, u.U. ist `rapidXML` davon auch betroffen. Die Wahl fiel auf JSON im allgemeinen, da dieses Format im Gegensatz zu XML moderner ist und auch höher typisiert (eindeutiger) ist.
 - **Gruppierung von Request-Parametern:** Insbesondere bei Anfragen mit vielen Parametern habe ich Hilfsparameter (z.B. "--- ALLGEMEIN ---") eingefügt, um die Parameter etwas zu gruppieren und für etwas mehr Übersicht zu sorgen. Diese können für Tests in der Apidog-Oberfläche problemlos mitgesendet werden, das stört die Dienste nicht.
 - **Parameterdoppelungen:** Einige Request-Parameter doppeln sich in ihrer Funktion (z.B. Zeitauswahl: auch Parameter zum separeten Setzen von Jahr, Monat und Tag verfügbar). Der Übersichtlichkeit halber wurden diese Doppelungen nicht mit in die Dokumentation aufgenommen. Die aufgenommen Parameter erfüllen (mindestens) alle Funktionen, die die nicht erwähnten Parameter auch erfüllen.
 - **Parameter für UI-Ausgaben:** Parameter, die sich auf die Ausgabe eines GUI beziehen (z.B. `itdLPxx_paramName`), werden in der Dokumentation nicht aufgelistet.
